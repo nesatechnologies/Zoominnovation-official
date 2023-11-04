@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="assets/img/Favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Zoom Innovation</title>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
+      </div>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="courses.html" class="nav-item nav-link">Courses</a>
+          <a href="hirepage.html" class="nav-item nav-link">Hire from us</a>
+          <a href="contact.html" class="nav-item nav-link">Contact us</a>
+        </div>
+        <div class="button-container">
+          <a href="comingsoon.html"><button>Mock Test</button></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navigation Bar End -->
+
+
+  <!-- Banner Section -->
+
+  <div class="banner">
+    <!-- <div class="main-header pt-lg-3 pt-2 position-absolute container-fluid">
+      <nav class="d-flex justify-content-between align-items-center px-md-4 px-2">
+        <div class="mian-logo">
+          <span class="d-block bg-danger p-1 px-3 text-white shadow">K | Mendano</span>
+        </div>
+        <div class="d-none d-sm-block">
+          <ul class="nav justify-content-end mt-0">
+            <li class="nav-item">
+              <a class="nav-link active link-light" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu d-block d-sm-none">
+          <a class="nav-link link-light" href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </nav>
+    </div> -->
+    <div id="mainBanner" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-item active" data-bs-interval="7000">
+          <img src="assets/img/carousel-01.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption px-md-5">
+            <h5>1st slide label</h5>
+            <hr class="bg-light border-4 border-top border-light">
+            <p>Some representative placeholder content for the first slide.</p>
+            <div class="banner-btn">
+              <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
+                Ipsum</button>
+              <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
+                Iseter</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="assets/img/carousel-01.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption px-md-5">
+            <h5>2nd slide label</h5>
+            <hr class="bg-light border-4 border-top border-light">
+            <p>Some representative placeholder content for the first slide.</p>
+            <div class="banner-btn">
+              <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
+                Ipsum</button>
+              <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
+                Iseter</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="assets/img/carousel-01.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption px-md-5">
+            <h5>3rd slide label</h5>
+            <hr class="bg-light border-4 border-top border-light">
+            <p>Some representative placeholder content for the first slide.</p>
+            <div class="banner-btn">
+              <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
+                Ipsum</button>
+              <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
+                Iseter</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="assets/img/carousel-01.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption px-md-5">
+            <h5>4th slide label</h5>
+            <hr class="bg-light border-4 border-top border-light">
+            <p>Some representative placeholder content for the first slide.</p>
+            <div class="banner-btn">
+              <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
+                Ipsum</button>
+              <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
+                Iseter</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="7000">
+          <img src="assets/img/carousel-01.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption px-md-5">
+            <h5>5th slide label</h5>
+            <hr class="bg-light border-4 border-top border-light">
+            <p>Some representative placeholder content for the first slide.</p>
+            <div class="banner-btn">
+              <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
+                Ipsum</button>
+              <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
+                Iseter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner Section End-->
+
+  <!-- <div class="mask1">
+    <img src="assets/img/carousel-01.png" alt="Cinque Terre" width="100%" height="400">
+  </div> -->
+
+  <!-- Hero Section -->
+
+  <section id="hero">
+
+    <div class="container">
+      <div class="hero">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Who We Are </h4>
+            <h1>We manufacture and install all the products to deliver a seamless experience</h1>
+            <p>Our services include the production and installation of various types of signage’s and graphics. We have
+              a variety of options from which you can choose the correct choice fitting to your demand. We use Latest
+              machineries and materials like, HP Latex, Eco Solvent, Lamination, Laser Cutting, Router, Chanel Bending
+              Machine, and Liquid Acrylic to ensure you are getting the result you desire.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="hero-index">
+              <div class="hero-item" data-aos="fade-left" data-aos-duration="1000">
+                <img src="assets/img/hero-01.png" class="img-2" alt="...">
+                <img src="assets/img/hero-02.png" class="img-1" alt="...">
+              </div>
+
+              <div class="hero-item" data-aos="fade-right" data-aos-duration="2000">
+                <img src="assets/img/hero-04.png" class="img-3" alt="...">
+                <img src="assets/img/hero-03.png" class="img-4" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Hero Section End -->
+
+  <!-- Service Section -->
+
+  <section id="service">
+    <div class="container">
+      <div class="service">
+        <div class="service-index">
+          <h1>Let’s Add Something <span>Creativity</span></h1>
+          <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field in
+            Kerala.
+            We are equipped with the most modern facilities to deliver high-quality work with zeal in graphics, signage
+            and
+            glass films. With excellent design, unique combinations of materials and technology.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-item">
+
+      <div class="tab-content" id="pills-tabContent">
+
+        <!-- Button 01 -->
+
+        <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-one-tab">
+          <div class="tab-item">
+            <div class="container">
+              <div class="tab-item-index">
+                <h1>Wall Graphics</h1>
+                <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field
+                  in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in
+                  graphics, signage and glass films. With excellent design, unique combinations of materials and
+                  technology.</p>
+              </div>
+            </div>
+            <img src="assets/img/carousel-01.png" class="w-100">
+          </div>
+        </div>
+
+        <!-- Button 01 -->
+
+        <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab">
+          <div class="container">
+            <div class="tab-item-index">
+              <h1>Wall Graphics</h1>
+              <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field
+                in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in
+                graphics, signage and glass films. With excellent design, unique combinations of materials and
+                technology.</p>
+            </div>
+          </div>
+          <img src="assets/img/carousel-02.png" class="w-100">
+        </div>
+
+        <!-- Button 01 -->
+
+        <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab">
+          <div class="container">
+            <div class="tab-item-index">
+              <h1>Wall Graphics</h1>
+              <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field
+                in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in
+                graphics, signage and glass films. With excellent design, unique combinations of materials and
+                technology.</p>
+            </div>
+          </div>
+          <img src="assets/img/carousel-03.png" class="w-100">
+        </div>
+
+        <!-- Button 01 -->
+
+        <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-four-tab">
+          <div class="container">
+            <div class="tab-item-index">
+              <h1>Wall Graphics</h1>
+              <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field
+                in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in
+                graphics, signage and glass films. With excellent design, unique combinations of materials and
+                technology.</p>
+            </div>
+          </div>
+          <img src="assets/img/carousel-04.png" class="w-100">
+        </div>
+
+        <!-- Button 01 -->
+
+        <div class="tab-pane fade" id="pills-five" role="tabpanel" aria-labelledby="pills-five-tab">
+          <div class="container">
+            <div class="tab-item-index">
+              <h1>Wall Graphics</h1>
+              <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field
+                in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in
+                graphics, signage and glass films. With excellent design, unique combinations of materials and
+                technology.</p>
+            </div>
+          </div>
+          <img src="assets/img/carousel-05.png" class="w-100">
+        </div>
+
+        <!-- Button 01 -->
+
+        <div class="tab-pane fade" id="pills-six" role="tabpanel" aria-labelledby="pills-six-tab">
+          <div class="container">
+            <div class="tab-item-index">
+              <h1>Wall Graphics</h1>
+              <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field
+                in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in
+                graphics, signage and glass films. With excellent design, unique combinations of materials and
+                technology.</p>
+            </div>
+          </div>
+          <img src="assets/img/carousel-06.png" class="w-100">
+        </div>
+
+        <!-- Button 01 -->
+
+        <div class="tab-pane fade" id="pills-seven" role="tabpanel" aria-labelledby="pills-seven-tab">
+          <div class="container">
+            <div class="tab-item-index">
+              <h1>Wall Graphics</h1>
+              <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field
+                in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in
+                graphics, signage and glass films. With excellent design, unique combinations of materials and
+                technology.</p>
+            </div>
+          </div>
+          <img src="assets/img/carousel-01.png" class="w-100">
+        </div>
+
+        <!-- Button 01 -->
+
+        <div class="tab-pane fade" id="pills-eight" role="tabpanel" aria-labelledby="pills-eight-tab">
+          <div class="container">
+            <div class="tab-item-index">
+              <h1>Wall Graphics</h1>
+              <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field
+                in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in
+                graphics, signage and glass films. With excellent design, unique combinations of materials and
+                technology.</p>
+            </div>
+          </div>
+          <img src="assets/img/carousel-02.png" class="w-100">
+        </div>
+
+        <!-- Button 01 -->
+
+        <div class="tab-pane fade" id="pills-nine" role="tabpanel" aria-labelledby="pills-nine-tab">
+          <div class="container">
+            <div class="tab-item-index">
+              <h1>Wall Graphics</h1>
+              <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field
+                in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in
+                graphics, signage and glass films. With excellent design, unique combinations of materials and
+                technology.</p>
+            </div>
+          </div>
+          <img src="assets/img/carousel-03.png" class="w-100">
+        </div>
+
+        <!-- Button 01 -->
+
+        <div class="tab-pane fade" id="pills-ten" role="tabpanel" aria-labelledby="pills-ten-tab">
+          <div class="container">
+            <div class="tab-item-index">
+              <h1>Wall Graphics</h1>
+              <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field
+                in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in
+                graphics, signage and glass films. With excellent design, unique combinations of materials and
+                technology.</p>
+            </div>
+          </div>
+          <img src="assets/img/carousel-04.png" class="w-100">
+        </div>
+
+      </div>
+
+      <div class="container custom-container">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-one-tab" data-bs-toggle="pill" data-bs-target="#pills-one"
+              type="button" role="tab" aria-controls="pills-one" aria-selected="true">Wall Graphics</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-two-tab" data-bs-toggle="pill" data-bs-target="#pills-two" type="button"
+              role="tab" aria-controls="pills-two" aria-selected="false">Frosted Films & Clear Graphics</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-three-tab" data-bs-toggle="pill" data-bs-target="#pills-three"
+              type="button" role="tab" aria-controls="pills-three" aria-selected="false">Sun Control & Saftey
+              Films</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-four-tab" data-bs-toggle="pill" data-bs-target="#pills-four"
+              type="button" role="tab" aria-controls="pills-four" aria-selected="false">LED Signages & Non LED
+              Signages</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-five-tab" data-bs-toggle="pill" data-bs-target="#pills-five"
+              type="button" role="tab" aria-controls="pills-five" aria-selected="false">Fire Safety Signages</button>
+          </li>
+          <br>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-six-tab" data-bs-toggle="pill" data-bs-target="#pills-six" type="button"
+              role="tab" aria-controls="pills-six" aria-selected="false">Wayfinding Signages</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-seven-tab" data-bs-toggle="pill" data-bs-target="#pills-seven"
+              type="button" role="tab" aria-controls="pills-seven" aria-selected="false">Printed & Mounted
+              Canvas</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-eight-tab" data-bs-toggle="pill" data-bs-target="#pills-eight"
+              type="button" role="tab" aria-controls="pills-sight" aria-selected="false">3m Anti-Skidape</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-nine-tab" data-bs-toggle="pill" data-bs-target="#pills-nine"
+              type="button" role="tab" aria-controls="pills-nine" aria-selected="false">3m Entryway Matting Sysytem
+              (EWS)</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-ten-tab" data-bs-toggle="pill" data-bs-target="#pills-ten" type="button"
+              role="tab" aria-controls="pills-ten" aria-selected="false">Internal Signages</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Service Section End -->
+
+
+  <!-- Video Section -->
+
+  <section class="visual">
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/Ei25ArTsD_A&t=1s"></iframe>
+    </div>
+  </section>
+
+  <!-- Video Section End -->
+
+  <!-- Number Count -->
+
+  <section>
+
+    <div class="container">
+      <div class="number-count">
+
+        <div class="counter-index">
+          <i class="fab fa-instagram fa-3x"></i>
+          <div class="counter" data-target="1300"></div>
+          <span>Project Complete</span>
+        </div>
+
+        <div class="counter-index">
+          <i class="fab fa-youtube fa-3x"></i>
+          <div class="counter" data-target="100"></div>
+          <span>Active Client</span>
+        </div>
+
+        <div class="counter-index">
+          <i class="fab fa-facebook fa-3x"></i>
+          <div class="counter" data-target="626"></div>
+          <span>Cups Of Coffee</span>
+        </div>
+
+        <div class="counter-index">
+          <i class="fab fa-facebook fa-3x"></i>
+          <div class="counter" data-target="2000">+</div>
+          <span>Happy Clients</span>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Number Count end -->
+
+  <!-- Who we are -->
+
+  <section id="about-more">
+    <div class="about-more">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <img src="assets/img/who-we-are.png">
+          </div>
+          <div class="col-md-6 col-lg-6 d-flex align-items-center">
+            <div>
+              <h4>Who We Are </h4>
+              <h1>We are trusted by more than 1000 clients</h1>
+              <p>We greatly value our customers here at Zoom Innovation. Your satisfaction as a customer is our number
+                one
+                priority. We believe that effective communication is essential between our clients and us to be on the
+                same page at every step of the project </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who we are End -->
+
+  <!-- portfoilio Section -->
+
+  <section id="portfolio">
+    <div class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Who We Are </h4>
+            <h1>We are trusted by more than 1000 clients</h1>
+            <p>We greatly value our customers here at Zoom Innovation. Your satisfaction as a customer is our number
+              one
+              priority. We believe that effective communication is essential between our clients and us to be on the
+              same page at every step of the project </p>
+          </div>
+          <div class="col-md-8">
+
+            <div class="portfolio-slider">
+
+              <ul class="slider">
+                <li>
+                  <div class="slider-inner">
+                    <img src="assets/img/portfolio-01.png">
+                  </div>
+                </li>
+                <li>
+                  <div class="slider-inner">
+                    <img src="assets/img/portfolio-01.png">
+                  </div>
+                </li>
+                <li>
+                  <div class="slider-inner">
+                    <img src="assets/img/portfolio-01.png">
+                  </div>
+                </li>
+                <li>
+                  <div class="slider-inner">
+                    <img src="assets/img/portfolio-01.png">
+                  </div>
+                </li>
+                <li>
+                  <div class="slider-inner">
+                    <img src="assets/img/portfolio-01.png">
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- portfoilio Section End -->
+
+  <!-- Clients -->
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h4>OUR CLIENTS</h4>
+        <h1>They Trust Us</h1>
+      </div>
+      <div class="clients">
+        <div class="row">
+          <div class="col">
+
+          </div>
+          <div class="col">
+
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client End -->
+
+  <!-- contact Section -->
+
+  <section id="contact">
+    <div class="contact">
+      <img src="assets/img/contact01.png" alt="Snow" style="width:100%;">
+      <div class="container">
+        <div class="contact-item">
+          <h1 class="text-white">Let's Get Your Project<br>Started!</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact Section End-->
+
+  <!-- ======= Footer ======= -->
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <!-- <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section> -->
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="footer">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <img src="assets/img/logo-white.png">
+            </h6>
+            <!-- <p>
+              Transforming young lives was a dream of the Ernakulam Social Service Society of the Archdiocese of
+              Verapoly in 1962 and was realized on a humble but firmly built foundation of a simple technical workshop
+              in Kalamassery, named Little Flower Engineering Institute (LFEI) with St.Theresa of Lisieux, popularly
+              known as "Little Flower" as its patron saint.
+            </p> -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Quic kLinks
+            </h6>
+            <p>
+              <a class="nav-link scrollto" href="#about">About</a>
+            </p>
+            <p>
+              <a class="nav-link scrollto" href="#course">Course</a>
+            </p>
+            <p>
+              <a class="nav-link scrollto " href="#why-us">Facilities</a>
+            </p>
+            <p>
+              <a class="nav-link scrollto" href="#portfolio">Our Partners</a>
+            </p>
+            <p>
+              <a class="nav-link scrollto" href="#portfolio">Gallery</a>
+            </p>
+            <p>
+              <a class="nav-link scrollto" href="#Placements">Placements</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Social Media
+            </h6>
+            <p>
+              <a href="https://twitter.com/?logout=1698841627658" class="twitter"><i class="bi bi-twitter"></i></a>
+            </p>
+            <p>
+              <a href="https://www.facebook.com/liitleflowerofficial" class="facebook"><i
+                  class="bi bi-facebook"></i></a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/lfei_kalamassery/?hl=en" class="instagram"><i
+                  class="bi bi-instagram"></i></a>
+            </p>
+            <p>
+              <a href="https://www.youtube.com/channel/UCc7PXphTYb6uo_tsgNh5KdQ" class="linkedin"><i
+                  class="bi bi-youtube"></i></i></a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="bi bi-pin me-3"></i>Little Flower Engineering Institute
+              NH - 544, Cochin University P.O.,
+              South Kalamassery,
+              Kochi-682022, Kerala, India</p>
+            <p>
+              <i class="bi bi-envelope me-3"></i>
+              info@littleflower.ac.in
+            </p>
+            <p><i class="bi bi-phone me-3"></i>+91-484-2541206</p>
+            <p><i class="bi bi-phone me-3"></i>+91 9778914284</p>
+            <p><i class="bi bi-phone me-3"></i>+91 9074405811</p>
+            <p><i class="bi bi-phone me-3"></i>0484 294 8320</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://www.nesatechnologies.com/">Nesa Technologies</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!-- End Footer -->
+
+  <!--============= script =============-->
+
+
+  <!-- slick slider -->
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <!-- slick slider -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+  <script>
+
+    let navbarlinks = select('#navbar .scrollto', true)
+    const navbarlinksActive = () => {
+      let position = window.scrollY + 200
+      navbarlinks.forEach(navbarlink => {
+        if (!navbarlink.hash) return
+        let section = select(navbarlink.hash)
+        if (!section) return
+        if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+          navbarlink.classList.add('active')
+        } else {
+          navbarlink.classList.remove('active')
+        }
+      })
+    }
+    window.addEventListener('load', navbarlinksActive)
+    onscroll(document, navbarlinksActive)
+  </script>
+
+
+
+
+
+
+  <script src="assets/js/script.js"></script>
+  <!--============= script End =============-->
+
+
+</body>
+
+</html>
