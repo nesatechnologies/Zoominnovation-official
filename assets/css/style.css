@@ -6,14 +6,25 @@ h3 {
   color: #000;
   font-family: Bentham;
   font-weight: 400;
-  line-height: 52px;
+  line-height: 1.2em;
   /* 104% */
   letter-spacing: 2px;
 }
 
-h4 {
+h2 {
   color: #ED1C24;
   font-family: Bentham;
+}
+
+@media (max-width: 812px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    text-align: center;
+  }
 }
 
 p {
@@ -30,10 +41,54 @@ body {
   margin-top: 0;
 }
 
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 812px) {
+  section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
+
+/*--- Image hover Effects
+-----------------------------------------------*/
+.image-zoom-effect {
+  overflow: hidden;
+}
+
+.image-zoom-effect .image-holder {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.image-zoom-effect:hover .image-holder {
+  transform: scale(0.95);
+}
+
+.image-zoom-effect img {
+  transform: scale(1);
+  will-change: transform;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 0;
+}
+
+.image-zoom-effect:hover img {
+  transform: scale(1.1);
+}
+
+
+
 
 /* Nav bar */
 
@@ -41,35 +96,124 @@ body {
 /* * Desktop Navigation  */
 
 .navbar {
-  background: #000000;
+  background: #000000ef;
   box-shadow: 0px 2px 21px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
 }
+
 
 .navbar .img1 {
   width: 80px;
 }
 
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar a {
   color: #ffffff !important;
+  border-bottom: 3px solid transparent;
 }
 
 .navbar a,
 .navbar a:focus {
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 15px;
+  color: #FFF;
+  font-family: AmstelvarAlpha;
+  font-size: 17px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
-  justify-content: space-between;
+  letter-spacing: 0.6px;
+  transition: linear .5s;
+  padding-right: 10px;
   /* padding: 10px 0 10px 30px */
 }
 
-.navbar a:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.navbar .nav-item:hover {
+  border-bottom: 3px solid #ED1C24;
+}
+
+/* .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar:hover>a {
-  color: #007bff;
+  color: #ffffff;
+}  */
+
+.navbar span {
+  color: #FFF;
+  border-radius: 50px;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 50px;
+  right: 45px;
+  font-size: 60px;
+
+}
+
+.overlay .closebtn:hover {
+  color: #FFF;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 @media (max-width: 812px) {
@@ -112,6 +256,10 @@ body {
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 } */
+.banner {
+  top: 0;
+}
+
 
 .mian-logo>span {
   font-size: 1.35em;
@@ -544,6 +692,9 @@ Hero Section======= */
 Service Section ======= */
 
 /* .service {} */
+#service {
+  margin-bottom: 0;
+}
 
 .service .service-index {
   text-align: center;
@@ -569,9 +720,10 @@ Service Section ======= */
 .nav.nav-pills {
   position: absolute;
   bottom: 0;
-  left: 0;
+  width: 60%;
   z-index: 1;
   text-align: center;
+  margin: auto;
 
 }
 
@@ -639,9 +791,9 @@ Service Section ======= */
 Number count */
 
 .number-count {
-  background-color: #8e44ad;
-  color: #fff;
-  font-family: "Roboto Mono", sans-serif;
+  background: #ED1C24;
+  color: #FFF;
+  font-family: Bentham;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -678,8 +830,41 @@ Number count */
   position: relative;
 }
 
+.about-banner-item {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
 .about-banner-item h1 {
   color: #ffffff;
+  font-size: 100px;
+}
+
+.btn-text {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  color: #ffffff;
+}
+
+.btn-text::after {
+  content: "";
+  position: absolute;
+  bottom: -0.01em;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #ffffff 50%, rgba(255, 255, 255, 0.3) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 50%;
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-text:hover::after {
+  background-position: 0% 50%;
 }
 
 .about-banner-item {
@@ -767,11 +952,26 @@ Number count */
   box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.15);
 }
 
+.portfolio .slider-2 .slider-inner {
+  width: 328px;
+  height: 380px;
+  border-radius: 20px;
+  background: #FFF;
+}
+
 .portfolio-slider .slider .slick-prev {
   display: none !important;
 }
 
 .portfolio-slider .slider .slick-next {
+  display: none !important;
+}
+
+.portfolio-slider .slider-2 .slick-prev {
+  display: none !important;
+}
+
+.portfolio-slider .slider-2 .slick-next {
   display: none !important;
 }
 
@@ -795,6 +995,37 @@ Number count */
   left: 50%;
   transform: translate(-50%, -50%);
 
+}
+
+/*------------------------------------------------ product Page  */
+
+.product-content img {
+  border-radius: 10px;
+  width: auto;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+/* .product-content img:hover {} */
+
+.product-content h3 {
+  width: 100%;
+}
+
+/*------------------------------------------------ Facility Page  */
+
+.Facility-content .row{
+  padding-left: 0;
+}
+
+.Facility-index {
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  margin : 20px;
+  padding: px;
 }
 
 /*------------------------------------------------ Footer  */

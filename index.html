@@ -32,19 +32,31 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto">
+        <div class="navbar-nav">
           <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="courses.html" class="nav-item nav-link">Courses</a>
-          <a href="hirepage.html" class="nav-item nav-link">Hire from us</a>
-          <a href="contact.html" class="nav-item nav-link">Contact us</a>
-        </div>
-        <div class="button-container">
-          <a href="comingsoon.html"><button>Mock Test</button></a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="product.html" class="nav-item nav-link">Product & Services</a>
+          <a href="facility.html" class="nav-item nav-link">Facilities</a>
+          <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+          <a href="contact.html" class="nav-item nav-link">contact Us</a>
         </div>
       </div>
+      <div class="logo">
+        <img src="assets/img/3m-logo.png" alt="" class="img-fluid">
+      </div>
+      <span onclick="openNav()">&#9776; </span>
     </div>
   </nav>
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
 
   <!-- Navigation Bar End -->
 
@@ -88,76 +100,102 @@
           <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="3" aria-label="Slide 4"></button>
           <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
+
         <div class="carousel-item active" data-bs-interval="7000">
-          <img src="assets/img/carousel-01.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption px-md-5">
-            <h5>1st slide label</h5>
-            <hr class="bg-light border-4 border-top border-light">
-            <p>Some representative placeholder content for the first slide.</p>
-            <div class="banner-btn">
-              <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
-                Ipsum</button>
-              <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
-                Iseter</button>
+          <img src="assets/img/slider/carousel-01.png" class="d-block w-100" alt="...">
+
+          <div class="container">
+            <div class="carousel-caption px-md-5">
+              <h5>1st slide label</h5>
+              <hr class="bg-light border-4 border-top border-light">
+              <p>Some representative placeholder content for the first slide.</p>
+              <div class="banner-btn">
+                <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
+                  Ipsum</button>
+                <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
+                  Iseter</button>
+              </div>
             </div>
           </div>
+
         </div>
+
         <div class="carousel-item" data-bs-interval="7000">
-          <img src="assets/img/carousel-01.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption px-md-5">
-            <h5>2nd slide label</h5>
-            <hr class="bg-light border-4 border-top border-light">
-            <p>Some representative placeholder content for the first slide.</p>
-            <div class="banner-btn">
-              <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
-                Ipsum</button>
-              <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
-                Iseter</button>
+          <img src="assets/img/slider/carousel-01.png" class="d-block w-100" alt="...">
+
+          <div class="container">
+            <div class="carousel-caption px-md-5">
+              <h5>2nd slide label</h5>
+              <hr class="bg-light border-4 border-top border-light">
+              <p>Some representative placeholder content for the first slide.</p>
+              <div class="banner-btn">
+                <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
+                  Ipsum</button>
+                <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
+                  Iseter</button>
+              </div>
             </div>
           </div>
+
         </div>
+
         <div class="carousel-item" data-bs-interval="7000">
-          <img src="assets/img/carousel-01.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption px-md-5">
-            <h5>3rd slide label</h5>
-            <hr class="bg-light border-4 border-top border-light">
-            <p>Some representative placeholder content for the first slide.</p>
-            <div class="banner-btn">
-              <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
-                Ipsum</button>
-              <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
-                Iseter</button>
+          <img src="assets/img/slider/carousel-01.png" class="d-block w-100" alt="...">
+
+          <div class="container">
+            <div class="carousel-caption px-md-5">
+              <h5>3rd slide label</h5>
+              <hr class="bg-light border-4 border-top border-light">
+              <p>Some representative placeholder content for the first slide.</p>
+              <div class="banner-btn">
+                <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
+                  Ipsum</button>
+                <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
+                  Iseter</button>
+              </div>
             </div>
           </div>
+
         </div>
+
         <div class="carousel-item" data-bs-interval="7000">
-          <img src="assets/img/carousel-01.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption px-md-5">
-            <h5>4th slide label</h5>
-            <hr class="bg-light border-4 border-top border-light">
-            <p>Some representative placeholder content for the first slide.</p>
-            <div class="banner-btn">
-              <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
-                Ipsum</button>
-              <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
-                Iseter</button>
+          <img src="assets/img/slider/carousel-01.png" class="d-block w-100" alt="...">
+
+          <div class="container">
+            <div class="carousel-caption px-md-5">
+              <h5>4th slide label</h5>
+              <hr class="bg-light border-4 border-top border-light">
+              <p>Some representative placeholder content for the first slide.</p>
+              <div class="banner-btn">
+                <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
+                  Ipsum</button>
+                <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
+                  Iseter</button>
+              </div>
             </div>
           </div>
+
         </div>
+
         <div class="carousel-item" data-bs-interval="7000">
-          <img src="assets/img/carousel-01.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption px-md-5">
-            <h5>5th slide label</h5>
-            <hr class="bg-light border-4 border-top border-light">
-            <p>Some representative placeholder content for the first slide.</p>
-            <div class="banner-btn">
-              <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
-                Ipsum</button>
-              <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
-                Iseter</button>
+          <img src="assets/img/slider/carousel-01.png" class="d-block w-100" alt="...">
+
+          <div class="container">
+            <div class="carousel-caption px-md-5">
+              <h5>5th slide label</h5>
+              <hr class="bg-light border-4 border-top border-light">
+              <p>Some representative placeholder content for the first slide.</p>
+              <div class="banner-btn">
+                <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem
+                  Ipsum</button>
+                <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor
+                  Iseter</button>
+              </div>
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
   </div>
@@ -175,24 +213,28 @@
     <div class="container">
       <div class="hero">
         <div class="row">
-          <div class="col-md-6">
-            <h4>Who We Are </h4>
-            <h1>We manufacture and install all the products to deliver a seamless experience</h1>
-            <p>Our services include the production and installation of various types of signage’s and graphics. We have
-              a variety of options from which you can choose the correct choice fitting to your demand. We use Latest
-              machineries and materials like, HP Latex, Eco Solvent, Lamination, Laser Cutting, Router, Chanel Bending
-              Machine, and Liquid Acrylic to ensure you are getting the result you desire.</p>
+          <div class="col-lg-6 col-md-12 col-sm-18 mb-5 d-flex align-items-center">
+            <div>
+              <h4></h4>
+              <h2 class="display-2 text-uppercase pb-2">Who We Are</h2>
+              <h3>We manufacture and install all the products to deliver a seamless experience</h3>
+              <p>Our services include the production and installation of various types of signage's and graphics. We
+                have
+                a variety of options from which you can choose the correct choice fitting to your demand. We use Latest
+                machineries and materials like, HP Latex, Eco Solvent, Lamination, Laser Cutting, Router, Chanel Bending
+                Machine, and Liquid Acrylic to ensure you are getting the result you desire.</p>
+            </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12 col-sm-18 mb-5">
             <div class="hero-index">
               <div class="hero-item" data-aos="fade-left" data-aos-duration="1000">
-                <img src="assets/img/hero-01.png" class="img-2" alt="...">
-                <img src="assets/img/hero-02.png" class="img-1" alt="...">
+                <img src="assets/img/content/hero-01.png" class="img-2" alt="...">
+                <img src="assets/img/content/hero-02.png" class="img-1" alt="...">
               </div>
 
               <div class="hero-item" data-aos="fade-right" data-aos-duration="2000">
-                <img src="assets/img/hero-04.png" class="img-3" alt="...">
-                <img src="assets/img/hero-03.png" class="img-4" alt="...">
+                <img src="assets/img/content/hero-04.png" class="img-3" alt="...">
+                <img src="assets/img/content/hero-03.png" class="img-4" alt="...">
               </div>
             </div>
           </div>
@@ -237,7 +279,7 @@
                   technology.</p>
               </div>
             </div>
-            <img src="assets/img/carousel-01.png" class="w-100">
+            <img src="assets/img/slider/carousel-01.png" class="w-100">
           </div>
         </div>
 
@@ -253,7 +295,7 @@
                 technology.</p>
             </div>
           </div>
-          <img src="assets/img/carousel-02.png" class="w-100">
+          <img src="assets/img/slider/carousel-02.png" class="w-100">
         </div>
 
         <!-- Button 01 -->
@@ -268,7 +310,7 @@
                 technology.</p>
             </div>
           </div>
-          <img src="assets/img/carousel-03.png" class="w-100">
+          <img src="assets/img/slider/carousel-03.png" class="w-100">
         </div>
 
         <!-- Button 01 -->
@@ -283,7 +325,7 @@
                 technology.</p>
             </div>
           </div>
-          <img src="assets/img/carousel-04.png" class="w-100">
+          <img src="assets/img/slider/carousel-04.png" class="w-100">
         </div>
 
         <!-- Button 01 -->
@@ -298,7 +340,7 @@
                 technology.</p>
             </div>
           </div>
-          <img src="assets/img/carousel-05.png" class="w-100">
+          <img src="assets/img/slider/carousel-05.png" class="w-100">
         </div>
 
         <!-- Button 01 -->
@@ -313,7 +355,7 @@
                 technology.</p>
             </div>
           </div>
-          <img src="assets/img/carousel-06.png" class="w-100">
+          <img src="assets/img/slider/carousel-06.png" class="w-100">
         </div>
 
         <!-- Button 01 -->
@@ -328,7 +370,7 @@
                 technology.</p>
             </div>
           </div>
-          <img src="assets/img/carousel-01.png" class="w-100">
+          <img src="assets/img/slider/carousel-01.png" class="w-100">
         </div>
 
         <!-- Button 01 -->
@@ -343,7 +385,7 @@
                 technology.</p>
             </div>
           </div>
-          <img src="assets/img/carousel-02.png" class="w-100">
+          <img src="assets/img/slider/carousel-02.png" class="w-100">
         </div>
 
         <!-- Button 01 -->
@@ -358,7 +400,7 @@
                 technology.</p>
             </div>
           </div>
-          <img src="assets/img/carousel-03.png" class="w-100">
+          <img src="assets/img/slider/carousel-03.png" class="w-100">
         </div>
 
         <!-- Button 01 -->
@@ -373,7 +415,7 @@
                 technology.</p>
             </div>
           </div>
-          <img src="assets/img/carousel-04.png" class="w-100">
+          <img src="assets/img/slider/carousel-04.png" class="w-100">
         </div>
 
       </div>
@@ -437,17 +479,17 @@
 
   <!-- Video Section -->
 
-  <section class="visual">
+  <div class="visual">
     <div class="video">
       <iframe src="https://www.youtube.com/embed/Ei25ArTsD_A&t=1s"></iframe>
     </div>
-  </section>
+  </div>
 
   <!-- Video Section End -->
 
   <!-- Number Count -->
 
-  <section>
+  <div class="">
 
     <div class="container">
       <div class="number-count">
@@ -479,7 +521,7 @@
       </div>
     </div>
 
-  </section>
+  </div>
 
   <!-- Number Count end -->
 
@@ -489,12 +531,12 @@
     <div class="about-more">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-6">
+          <div class="col-lg-6 col-md-12 col-sm-18 mb-5">
             <img src="assets/img/who-we-are.png">
           </div>
-          <div class="col-md-6 col-lg-6 d-flex align-items-center">
+          <div class="col-lg-6 col-md-12 col-sm-18 mb-5 d-flex align-items-center">
             <div>
-              <h4>Who We Are </h4>
+              <h2 class="display-2 text-uppercase pb-2">Who We Are</h2>
               <h1>We are trusted by more than 1000 clients</h1>
               <p>We greatly value our customers here at Zoom Innovation. Your satisfaction as a customer is our number
                 one
@@ -515,7 +557,7 @@
     <div class="portfolio">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg-5 col-md-11 col-sm-17 mb-5">
             <h4>Who We Are </h4>
             <h1>We are trusted by more than 1000 clients</h1>
             <p>We greatly value our customers here at Zoom Innovation. Your satisfaction as a customer is our number
@@ -523,11 +565,11 @@
               priority. We believe that effective communication is essential between our clients and us to be on the
               same page at every step of the project </p>
           </div>
-          <div class="col-md-8">
+          <div class="col-lg-7 col-md-13 col-sm-19 mb-5">
 
             <div class="portfolio-slider">
 
-              <ul class="slider">
+              <ul class="slider-2">
                 <li>
                   <div class="slider-inner">
                     <img src="assets/img/portfolio-01.png">
@@ -787,8 +829,9 @@
 
 
 
-
   <script src="assets/js/script.js"></script>
+  <script type="text/javascript" src="assets/js/plugins.js"></script>
+
   <!--============= script End =============-->
 
 
