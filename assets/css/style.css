@@ -172,10 +172,9 @@ section {
 
 .overlay-content {
   position: relative;
-  top: 25%;
   width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
+  top: 10%;
 }
 
 .overlay a {
@@ -239,6 +238,98 @@ section {
   }
 }
 
+/*---------------------------------------------- 
+ Inner Tab Content */
+
+.overlay-index .tab-content {
+  background-color: #00000000;
+}
+
+.overlay-index nav {
+  margin-top: 50px;
+}
+
+.overlay-index:hover {
+  
+}
+
+.overlay-index h1 {
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.overlay-index .nav.nav-pills {
+  position: inherit;
+}
+
+.overlay .nav-pills .nav-link {
+  color: #ffffff;
+  text-align: left;
+  font-family: Bentham;
+  font-size: 25px;
+}
+
+.overlay .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: #00000000;
+  color: #e02626;
+  border-bottom: 2px #e02626;
+}
+
+.overlay-index .tab-content img {
+  max-width: 100%;
+  min-width: 100%;
+  width: auto;
+  animation: mymove .5s linear;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+@keyframes mymove {
+  from {
+    top: 50px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+
+.img__wrap {
+  position: relative;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(0deg, #ED3237 0%, rgba(237, 50, 55, 0.15) 46.34%, rgba(237, 50, 55, 0.00) 100%);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 10px;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+  text-align: center;
+  top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* .mask1 {
@@ -260,6 +351,17 @@ section {
   top: 0;
 }
 
+.banner svg {
+  position: relative;
+  bottom: 200px;
+  z-index: 999;
+}
+
+@media screen and (max-width: 1100px) {
+  .banner svg {
+    bottom: 140px;
+  }
+}
 
 .mian-logo>span {
   font-size: 1.35em;
@@ -598,8 +700,12 @@ li.nav-item>a {
 /*---------------------------------------------- 
 Hero Section======= */
 
+#hero {
+  margin-top: -259px;
+}
+
 .hero {
-  margin: 80px;
+  margin: 20px;
   max-width: 100%;
   height: 80vh;
   display: flex;
@@ -729,7 +835,7 @@ Service Section ======= */
 
 .tab-content {
   order: 1;
-  background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0.65) 100%);
+  /* background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0.65) 100%); */
 }
 
 .service-item .nav-pills li {
@@ -778,6 +884,8 @@ Service Section ======= */
 .tab-item-index p {
   color: #ffffff;
 }
+
+
 
 /*---------------------------------------------- 
  Video Section */
@@ -1006,17 +1114,17 @@ Number count */
   align-items: center;
 } */
 
-form .form-group{
+form .form-group {
   margin-top: 30px;
 }
 
-form .form-group .form-control{
+form .form-group .form-control {
   background-color: #EEE;
   border-radius: 20px;
   border: none;
 }
 
-form .btn{
+form .btn {
   margin-top: 30px;
   background-color: #000;
   padding-left: 30px;
