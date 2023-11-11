@@ -229,6 +229,11 @@ section {
   color: #FFF;
 }
 
+.navbar-light .navbar-toggler {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px
@@ -242,6 +247,9 @@ section {
 }
 
 @media (max-width: 812px) {
+  .navbar span {
+    display: none;
+  }
   .navbar img {
     width: 180px;
   }
@@ -495,15 +503,16 @@ hr.border-light {
   .carousel-inner {
     height: 50vh;
   }
+
   .carousel-caption h5 {
     font-size: 5em;
   }
-  
+
   .carousel-caption h4 {
     font-size: 4em;
 
   }
-  
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -933,6 +942,7 @@ Service Section ======= */
   flex-direction: column;
   height: 60vh;
   background-color: #000000;
+  margin-top: 50px;
 }
 
 .service-item .container {
@@ -940,17 +950,34 @@ Service Section ======= */
   justify-content: center;
   align-items: center;
 }
+
 .responsive-service-item {
   display: none;
 }
-.responsive-service-item{
+
+.responsive-index {
+  border-radius: 20px;
+  margin: 10px;
+  background: #FFF;
+  box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.15);
+}
+.responsive-index {
 
 }
 
-@media screen and (max-width: 956px){
+.responsive-item {
+  padding: 30px;
+}
+
+@media screen and (max-width: 956px) {
+  #service {
+    margin-top: 150px;
+  }
+
   .service-item {
     display: none;
   }
+
   .responsive-service-item {
     display: block;
   }
@@ -958,7 +985,7 @@ Service Section ======= */
 
 .nav.nav-pills {
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   /* width: 60%; */
   z-index: 1;
   text-align: center;
@@ -1861,6 +1888,26 @@ footer .footer-p {
   /* 183.333% */
   letter-spacing: 0.48px;
 }
+
+
+
+
+@media (max-width: 980px) {
+  footer .footer p {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 /*** Spinner ***/
 #spinner {

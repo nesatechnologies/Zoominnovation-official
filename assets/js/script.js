@@ -86,6 +86,37 @@
   });
 
 
+  // Responsive Slider 
+
+  $('.responsive-slider').slick({
+    centerMode: true,
+    centerPadding: '20px',
+    slidesToShow: 2,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '20px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '20px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+
   /**
    * Animation on scroll
    */
