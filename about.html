@@ -21,62 +21,70 @@
 
 <body>
 
-  <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
 
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="container">
-      <div class="logo">
-        <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
-      </div>
-      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link active">About Us</a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Product & Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
+                            <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a>
+                            </li>
+                            <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
+                            <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
+                            <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
+                            <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
+                            <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
+                            <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
+                            <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
+                            <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facility.html" tabindex="-1" aria-disabled="true">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html" tabindex="-1" aria-disabled="true">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">contact Us</a>
+                    </li>
+                </ul>
+            </div>
 
-          <!-- <a href="product.html" class="nav-item nav-link">Product & Services</a> -->
-          
-          <a class="nav-link nav-item dropdown-toggle" href="product.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Product & Services</a>
-
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
-            <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
-            <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
-            <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
-            <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
-            <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
-            <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
-            <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
-            <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
-            <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
-          </ul>
-
-          <a href="facility.html" class="nav-item nav-link">Facilities</a>
-          <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-          <a href="contact.html" class="nav-item nav-link">contact Us</a>
+            <span onclick="openNav()">&#9776; </span>
         </div>
-      </div>
-      <div class="logo">
-        <img src="assets/img/3m-logo.png" alt="" class="img-fluid">
-      </div>
-      <span onclick="openNav()">&#9776; </span>
-    </div>
-  </nav>
+    </nav>
 
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
     </div>
-  </div>
 
-  <!-- Navigation Bar End -->
+    <!-- Navigation Bar End -->
 
     <!-- ==== Banner Image ==== -->
 

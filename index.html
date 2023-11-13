@@ -24,51 +24,62 @@
 
 <body>
 
-  <!-- Navigation Bar -->
-
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <div class="logo">
-        <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
-      </div>
-      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About Us</a>
 
-          <!-- <a href="product.html" class="nav-item nav-link">Product & Services</a> -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
 
-          <a class="nav-link nav-item dropdown-toggle" href="product.html" id="navbarDarkDropdownMenuLink" role="button"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Product & Services</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Product & Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
+              <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
+              <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
+              <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
+              <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
+              <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
+              <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
+              <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
+              <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
+              <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
+            </ul>
+          </li>
 
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
-            <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
-            <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
-            <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
-            <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
-            <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
-            <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
-            <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
-            <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
-            <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="facility.html" tabindex="-1" aria-disabled="true">Facilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio-index.html" tabindex="-1" aria-disabled="true">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">contact Us</a>
+          </li>
+        </ul>
 
-          <a href="facility.html" class="nav-item nav-link">Facilities</a>
-          <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-          <a href="contact.html" class="nav-item nav-link">contact Us</a>
-        </div>
       </div>
-      <div class="logo">
-        <img src="assets/img/3m-logo.png" alt="" class="img-fluid">
-      </div>
-      <span onclick="openNav()">&#9776; </span>
+
+     <img src="assets/img/3m-logo.png" alt="" class="img-fluid sub-logo">
+
+      <span onclick="openNav()" class="side-bar">&#9776; </span>
     </div>
   </nav>
+
 
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -833,6 +844,9 @@
               brand stories in a more impactful way. With 3M graphic films and over laminates you can make nearly any
               surface a canvas – whether smooth and flat walls or rough and textured brick walls..</p>
           </div>
+          <div class="banner-btn">
+            <a href="service-1.html"><button type="button" class="btn px-lg-5 px-md-4 px-2 py-2">Know More</button></a>
+          </div>
         </li>
 
         <li class="responsive-index">
@@ -842,6 +856,9 @@
             <hr class="bg-light border-4 border-top border-light">
             <p>Give your tenants custom and elegant interiors that provide enhanced privacy without sacrificing
               natural light. 3M™ Glass Finishes let you define spaces without confining them.</p>
+          </div>
+          <div class="banner-btn">
+            <a href="service-2.html"><button type="button" class="btn px-lg-5 px-md-4 px-2 py-2">Know More</button></a>
           </div>
         </li>
 
@@ -854,6 +871,9 @@
               trending skyward, 3Mâ„¢ Window Films can help increase tenant comfort, conserve energy and even
               increase safety and security.</p>
           </div>
+          <div class="banner-btn">
+            <a href="service-3.html"><button type="button" class="btn px-lg-5 px-md-4 px-2 py-2">Know More</button></a>
+          </div>
         </li>
 
         <li class="responsive-index">
@@ -863,6 +883,9 @@
             <hr class="bg-light border-4 border-top border-light">
             <p>LED Signage consists of a wide range of indoor and outdoor signage that provides eye-catching
               experiences with industry leading technology</p>
+          </div>
+          <div class="banner-btn">
+            <a href="service-4.html"><button type="button" class="btn px-lg-5 px-md-4 px-2 py-2">Know More</button></a>
           </div>
         </li>
 
@@ -874,6 +897,9 @@
             <p>We are engaged in manufacturing, wholesaling and trading high quality range of Fire Safety
               Signages. All the signs are manufactured using quality material and modern technology in strict
               compliance with industry laid guidelines.</p>
+          </div>
+          <div class="banner-btn">
+            <a href="service-5.html"><button type="button" class="btn px-lg-5 px-md-4 px-2 py-2">Know More</button></a>
           </div>
         </li>
 
@@ -888,6 +914,9 @@
               graphics, signage and glass films. With excellent design, unique combinations of materials and
               technology.</p>
           </div>
+          <div class="banner-btn">
+            <a href="service-6.html"><button type="button" class="btn px-lg-5 px-md-4 px-2 py-2">Know More</button></a>
+          </div>
         </li>
 
         <li class="responsive-index">
@@ -898,6 +927,9 @@
             <p>A canvas print is the result of an image printed onto canvas which is stretched onto a frame.
               Canvas prints are used as the final output in an art piece, or as a way to reproduce other forms of
               art</p>
+          </div>
+          <div class="banner-btn">
+            <a href="service-7.html"><button type="button" class="btn px-lg-5 px-md-4 px-2 py-2">Know More</button></a>
           </div>
         </li>
 
@@ -911,6 +943,9 @@
               pressure-sensitive adhesive. The anti-slip coating provides an effective, non-slip surface for areas
               that are little to heavy with shoes.</p>
           </div>
+          <div class="banner-btn">
+            <a href="service-8.html"><button type="button" class="btn px-lg-5 px-md-4 px-2 py-2">Know More</button></a>
+          </div>
         </li>
 
         <li class="responsive-index">
@@ -922,6 +957,9 @@
               a facility helps to maintain a clean and safe environment, not only by providing a clean appearance,
               but also by helping to reduce slip and fall incidents. </p>
           </div>
+          <div class="banner-btn">
+            <a href="service-9.html"><button type="button" class="btn px-lg-5 px-md-4 px-2 py-2">Know More</button></a>
+          </div>
         </li>
 
         <li class="responsive-index">
@@ -932,6 +970,9 @@
             <p>3M™ Nomad™ Matting traps, holds, and hides dirt and water. Preventing dirt and water from entering
               a facility helps to maintain a clean and safe environment, not only by providing a clean appearance,
               but also by helping to reduce slip and fall incidents. </p>
+          </div>
+          <div class="banner-btn">
+            <a href="service-10.html"><button type="button" class="btn px-lg-5 px-md-4 px-2 py-2">Know More</button></a>
           </div>
         </li>
 
@@ -1185,45 +1226,16 @@
   <!-- ======= Footer ======= -->
 
   <!-- Footer -->
-
+<!-- 
   <footer class="text-center text-lg-start bg-light text-muted">
 
-    <!-- Section: Social media -->
-    <!-- <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </section> -->
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
     <section class="footer">
       <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
+
         <div class="row mt-3">
-          <!-- Grid column -->
+
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
+
             <h6 class="text-uppercase fw-bold mb-4">
               <img src="assets/img/logo-white.png">
               <p class="footer-p">Zoom Innovation is a graphics and signage company growing as one of the top performers
@@ -1231,18 +1243,11 @@
                 with zeal in graphics, signage and glass films. With excellent design, unique combinations of materials
                 and technology.</p>
             </h6>
-            <!-- <p>
-              Transforming young lives was a dream of the Ernakulam Social Service Society of the Archdiocese of
-              Verapoly in 1962 and was realized on a humble but firmly built foundation of a simple technical workshop
-              in Kalamassery, named Little Flower Engineering Institute (LFEI) with St.Theresa of Lisieux, popularly
-              known as "Little Flower" as its patron saint.
-            </p> -->
-          </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
+          </div>
+
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
+
             <h6 class="text-uppercase fw-bold mb-4">
               Quic kLinks
             </h6>
@@ -1266,11 +1271,9 @@
             </p>
           </div>
 
-          <!-- Grid column -->
 
-          <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
+
             <h6 class="text-uppercase fw-bold mb-4">
               Social Media
             </h6>
@@ -1278,23 +1281,18 @@
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             </p>
             <p>
-              <a href="#" class="facebook"><i
-                  class="bi bi-facebook"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
             </p>
             <p>
-              <a href="#" class="instagram"><i
-                  class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
             </p>
             <p>
-              <a href="#" class="linkedin"><i
-                  class="bi bi-youtube"></i></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-youtube"></i></i></a>
             </p>
           </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
+
             <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
             <p><i class="bi bi-pin me-3"></i>
               41/1205, Kunjattu Road Padivattom, Edappally P O, Ernakulam, Kerala 682024
@@ -1305,22 +1303,86 @@
             </p>
             <p><i class="bi bi-phone me-3"></i>+91 9526 007 700</p>
           </div>
-          <!-- Grid column -->
+
         </div>
-        <!-- Grid row -->
+
       </div>
     </section>
-    <!-- Section: Links  -->
 
-    <!-- Copyright -->
+
+
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2023 Copyright:
       <a class="text-reset fw-bold" href="https://www.nesatechnologies.com/">Nesa Technologies</a>
     </div>
-    <!-- Copyright -->
-  </footer>
+
+  </footer> -->
   <!-- Footer -->
   <!-- End Footer -->
+
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo-white.png">
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+  
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p>United States</p>
+            <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="container copyright text-center mt-4">
+        <p>&copy; <span>Copyright</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+  
+    </footer><!-- End Footer -->
+  
 
   <!--============= script =============-->
 
