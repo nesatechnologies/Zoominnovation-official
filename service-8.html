@@ -25,98 +25,348 @@
 
     <!-- Navigation Bar -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Product & Services
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
-                            <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a>
-                            </li>
-                            <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
-                            <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
-                            <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
-                            <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
-                            <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
-                            <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
-                            <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
-                            <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="facility.html" tabindex="-1" aria-disabled="true">Facilities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html" tabindex="-1" aria-disabled="true">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">contact Us</a>
-                    </li>
+          <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">&#9776;</span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Product & Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
+                  <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
+                  <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
+                  <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
+                  <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
+                  <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
+                  <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
+                  <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
+                  <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
+                  <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
                 </ul>
-            </div>
-
-            <span onclick="openNav()">&#9776; </span>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="facility.html" tabindex="-1" aria-disabled="true">Facilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio-index.html" tabindex="-1" aria-disabled="true">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">contact Us</a>
+              </li>
+            </ul>
+    
+          </div>
+    
+          <img src="assets/img/3m-logo.png" alt="" class="img-fluid sub-logo">
+    
+          <span onclick="openNav()" class="side-bar">&#9776; </span>
         </div>
-    </nav>
-
-    <div id="myNav" class="overlay">
+      </nav>
+    
+    
+      <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+          <div class="container">
+            <div class="overlay-index">
+    
+              <h1>Products & Services</h1>
+              <hr class="bg-light border-4 border-top border-light">
+              <div class="d-flex align-items-start">
+    
+                <!-- Tab Content Button -->
+    
+                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    
+                  <button class="nav-link active" id="v-pills-one-tab" data-bs-toggle="pill" data-bs-target="#v-pills-one"
+                    type="button" role="tab" aria-controls="v-pills-one" aria-selected="true">Wall Graphics</button>
+    
+                  <button class="nav-link" id="v-pills-two-tab" data-bs-toggle="pill" data-bs-target="#v-pills-two"
+                    type="button" role="tab" aria-controls="v-pills-two" aria-selected="false">Frosted Films & Clear
+                    Graphics</button>
+    
+                  <button class="nav-link" id="v-pills-three-tab" data-bs-toggle="pill" data-bs-target="#v-pills-three"
+                    type="button" role="tab" aria-controls="v-pills-three" aria-selected="false">Sun Control & Saftey
+                    Films</button>
+    
+                  <button class="nav-link" id="v-pills-four-tab" data-bs-toggle="pill" data-bs-target="#v-pills-four"
+                    type="button" role="tab" aria-controls="v-pills-four" aria-selected="false">LED Signages & Non LED
+                    Signages</button>
+    
+                  <button class="nav-link" id="v-pills-five-tab" data-bs-toggle="pill" data-bs-target="#v-pills-five"
+                    type="button" role="tab" aria-controls="v-pills-five" aria-selected="false">Fire Safety
+                    Signages</button>
+    
+                  <button class="nav-link" id="v-pills-six-tab" data-bs-toggle="pill" data-bs-target="#v-pills-six"
+                    type="button" role="tab" aria-controls="v-pills-six" aria-selected="true">Wayfinding Signages</button>
+    
+                  <button class="nav-link" id="v-pills-seven-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seven"
+                    type="button" role="tab" aria-controls="v-pills-seven" aria-selected="false">Printed & Mounted
+                    Canvas</button>
+    
+                  <button class="nav-link" id="v-pills-eight-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eight"
+                    type="button" role="tab" aria-controls="v-pills-eight" aria-selected="false">3m Anti-Skid ape</button>
+    
+                  <button class="nav-link" id="v-pills-nine-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nine"
+                    type="button" role="tab" aria-controls="v-pills-nine" aria-selected="false">3m Entryway Matting Sysytem
+                    (EWS)</button>
+    
+                  <button class="nav-link" id="v-pills-ten-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ten"
+                    type="button" role="tab" aria-controls="v-pills-ten" aria-selected="false">Internal Signages</button>
+    
+                </div>
+    
+                <!-- Tab Content Start -->
+    
+                <div class="tab-content" id="v-pills-tabContent">
+    
+                  <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel" aria-labelledby="v-pills-one-tab">
+    
+                    <div class="row">
+    
+                      <div class="col-lg-4" data-aos="fade-right">
+                        <div class="img__wrap">
+                          <img src="assets/img/product/product-1-1.png" class="image-zoom-effect">
+                          <h3 class="img__description">This image looks super neat.</h3>
+                        </div>
+                      </div>
+    
+                      <div class="col-lg-4" data-aos="fade-right">
+                        <div class="img__wrap">
+                          <img src="assets/img/product/product-1-2.png" class="image-zoom-effect">
+                          <h3 class="img__description">This image looks super neat.</h3>
+                        </div>
+                      </div>
+                      <div class="col-lg-4" data-aos="fade-right">
+                        <div class="img__wrap">
+                          <img src="assets/img/product/product-1-3.png" class="image-zoom-effect">
+                          <h3 class="img__description">This image looks super neat.</h3>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="tab-pane fade" id="v-pills-two" role="tabpanel" aria-labelledby="v-pills-two-tab">
+    
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="assets/img/content/product-2.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/content/product-3.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/content/product-4.png" class="image-zoom-effect">
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="tab-pane fade" id="v-pills-three" role="tabpanel" aria-labelledby="v-pills-three-tab">.
+    
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/service-1.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/service-2.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-3.png" class="image-zoom-effect">
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="tab-pane fade" id="v-pills-four" role="tabpanel" aria-labelledby="v-pills-four-tab">
+    
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/service-4.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/service-5.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/service-6.png" class="image-zoom-effect">
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="tab-pane fade" id="v-pills-five" role="tabpanel" aria-labelledby="v-pills-five-tab">
+    
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-5.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-5-1.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-5-2.png" class="image-zoom-effect">
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="tab-pane fade" id="v-pills-six" role="tabpanel" aria-labelledby="v-pills-six-tab">
+    
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-6-1.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-6-2.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-6-3.png" class="image-zoom-effect">
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="tab-pane fade" id="v-pills-seven" role="tabpanel" aria-labelledby="v-pills-seven-tab">
+    
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-7.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/service-11.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/service-11-1.png" class="image-zoom-effect">
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="tab-pane fade" id="v-pills-eight" role="tabpanel" aria-labelledby="v-pills-eight-tab">.
+    
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-8.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-9.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-8-1.png" class="image-zoom-effect">
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="tab-pane fade" id="v-pills-nine" role="tabpanel" aria-labelledby="v-pills-nine-tab">
+    
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-9.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-9-1.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/product-9-2.png" class="image-zoom-effect">
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="tab-pane fade" id="v-pills-ten" role="tabpanel" aria-labelledby="v-pills-ten-tab">
+    
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/service-8.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/service-9.png" class="image-zoom-effect">
+                      </div>
+                      <div class="col-lg-4">
+                        <img src="assets/img/product/service-10.png" class="image-zoom-effect">
+                      </div>
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+                <!-- Tab Content End -->
+    
+              </div>
+    
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    
 
     <!-- Navigation Bar End -->
 
     <!-- Product section-->
-    <section class="py-2">
+    <section class="py-2 services">
         <div class="container px-4 px-lg-5 my-5">
             <div class="row gx-4 gx-lg-5 align-items-center">
                 <div class="col-md-6">
-                    <div class="product-slider">
+                    <!-- <div class="product-slider">
                         <div class="product-feature">
                         </div>
                         <div class="product-overlay">
                         </div>
+                    </div> -->
+                    <div class="content" style="max-width:1200px">
+                        <img class="mySlides" src="assets/img/product/product-8.png" style="width:100%;">
+                        <img class="mySlides" src="assets/img/product/product-9.png" style="width:100%;display:none">
+                        <!-- <img class="mySlides" src="assets/img/product/service-11-1.png" style="width:100%;display:none"> -->
+
+                        <div class="row-padding w3-section d-flex">
+                            <div class="col s4">
+                                <img class="demo w3-opacity " src="assets/img/product/product-8.png"
+                                    onclick="currentDiv(1)">
+                            </div>
+                            <div class="col s4">
+                                <img class="demo w3-opacity " src="assets/img/product/product-9.png"
+                                    onclick="currentDiv(2)">
+                            </div>
+                            <!-- <div class="col s4">
+                                <img class="demo w3-opacity" src="assets/img/product/service-11-1.png"
+                                    onclick="currentDiv(3)">
+                            </div> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h1 class="display-5 fw-bolder">Wall Graphics/Vinyl Graphics</h1>
+                    <h1 class="display-5 fw-bolder">3M™ Safety-Walk™ Slip-Resistant General Purpose Tapes</h1>
                     <div class="fs-5 mb-5">
                     </div>
-                    <p class="lead">Create beautiful aesthetics inside and out with interior and exterior graphics and
-                        signage that tell brand stories in a more impactful way. With 3M graphic films and over
-                        laminates you can make nearly any surface a canvas – whether smooth and flat walls or rough and
-                        textured brick walls.
-
-                        Transform blank buildings and walls into works of art and extend brands into experiential spaces
-                        with 3M graphic films and over laminates. Create stunning, picture-perfect wall graphics and
-                        building wraps for almost any surface including textured walls and smooth surfaces, inside and
-                        out.
-
-                        Vinyl Graphics is also known as wall decal, wall sticker, wall tattoo, or wall vinyl, is a vinyl
-                        sticker that is affixed to a wall or other smooth surface for decoration and informational
-                        purposes.</p>
+                    <p class="lead">The 3M™ Safety Walk™ Universal Anti-Slip Coating (Type 1) Series 600 is made of a
+                        mineral-coated material attached to a plastic film with a durable resin on the back of which
+                        there is a pressure-sensitive adhesive. The anti-slip coating provides an effective, non-slip
+                        surface for areas that are little to heavy with shoes. Mainly intended for dry, wet or oily
+                        floors in industry and trades with high pedestrian or light vehicle traffic, such as: corridors,
+                        production and storage rooms, ramps, stairs, ladders, footboards on machinery and emergency
+                        exits. Available in a variety of colors and sizes. Product Color: Black, Safety Yellow,
+                        Transparent, White, Yellow</p>
                     <div class="d-flex mt-5">
                         <button class="product-btn flex-shrink-0" type="button">
                             <i class="bi-phone me-1"></i>
@@ -127,259 +377,109 @@
             </div>
         </div>
     </section>
+
     <!-- Related items section-->
+
     <section class="py-5 bg-light">
         <div class="container px-4 px-lg-5 mt-5">
-            <h2 class="fw-bolder mb-4">Related products</h2>
+            <h2 class="fw-bolder mb-4">Related works</h2>
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <div class="col mb-5">
                     <div class="card h-100">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                        <!-- Product details-->
-                        <!-- <div class="card-body p-4">
-                            <div class="text-center">
-                                <h5 class="fw-bolder">Fancy Product</h5>
-                                $40.00 - $80.00
-                            </div>
-                        </div> -->
-                        <!-- Product actions-->
-                        <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a>
-                            </div>
-                        </div> -->
+                        <img class="card-img-top" src="assets/img/product/product-9.png" alt="..." />
+
                     </div>
                 </div>
                 <div class="col mb-5">
                     <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
-                        </div>
-                        <!-- Product image-->
-                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Special Item</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$20.00</span>
-                                $18.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
-                            </div>
-                        </div>
+
+                        <img class="card-img-top" src="assets/img/product/product-8.png" alt="..." />
                     </div>
                 </div>
+                <!-- 
                 <div class="col mb-5">
                     <div class="card h-100">
-                        <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
-                        </div>
-                        <!-- Product image-->
-                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Sale Item</h5>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$50.00</span>
-                                $25.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
-                            </div>
-                        </div>
+
+                        <img class="card-img-top" src="assets/img/product/service-7.png" alt="..." />
                     </div>
-                </div>
-                <div class="col mb-5">
+                </div> -->
+                <!-- <div class="col mb-5">
                     <div class="card h-100">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Popular Item</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                $40.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
-                            </div>
-                        </div>
+                        <img class="card-img-top" src="assets/img/product/product-6.png" alt="..." />
                     </div>
-                </div>
+                </div>  -->
             </div>
         </div>
     </section>
 
-
-
-
-
     <!-- ======= Footer ======= -->
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <!-- Section: Social media -->
-        <!-- <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </section> -->
-        <!-- Section: Social media -->
+    <footer id="footer" class="footer">
 
-        <!-- Section: Links  -->
-        <section class="footer">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <img src="assets/img/logo-white.png">
-                        </h6>
-                        <!-- <p>
-              Transforming young lives was a dream of the Ernakulam Social Service Society of the Archdiocese of
-              Verapoly in 1962 and was realized on a humble but firmly built foundation of a simple technical workshop
-              in Kalamassery, named Little Flower Engineering Institute (LFEI) with St.Theresa of Lisieux, popularly
-              known as "Little Flower" as its patron saint.
-            </p> -->
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <img src="assets/img/logo-white.png">
+                    </a>
+                    <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this
+                        field in Kerala. We are equipped with the most modern facilities to deliver high-quality work
+                        with zeal in graphics, signage and glass films. With excellent design, unique combinations of
+                        materials and technology.</p>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://www.facebook.com/zoominnovationcochin/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/zoominnovation007/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCGUBcSAxgxmKyyAJPd9Mf6w"><i
+                                class="bi bi-youtube"></i></a>
                     </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Quic kLinks
-                        </h6>
-                        <p>
-                            <a class="nav-link scrollto" href="#about">About</a>
-                        </p>
-                        <p>
-                            <a class="nav-link scrollto" href="#course">Course</a>
-                        </p>
-                        <p>
-                            <a class="nav-link scrollto " href="#why-us">Facilities</a>
-                        </p>
-                        <p>
-                            <a class="nav-link scrollto" href="#portfolio">Our Partners</a>
-                        </p>
-                        <p>
-                            <a class="nav-link scrollto" href="#portfolio">Gallery</a>
-                        </p>
-                        <p>
-                            <a class="nav-link scrollto" href="#Placements">Placements</a>
-                        </p>
-                    </div>
-
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Social Media
-                        </h6>
-                        <p>
-                            <a href="https://twitter.com/?logout=1698841627658" class="twitter"><i
-                                    class="bi bi-twitter"></i></a>
-                        </p>
-                        <p>
-                            <a href="https://www.facebook.com/liitleflowerofficial" class="facebook"><i
-                                    class="bi bi-facebook"></i></a>
-                        </p>
-                        <p>
-                            <a href="https://www.instagram.com/lfei_kalamassery/?hl=en" class="instagram"><i
-                                    class="bi bi-instagram"></i></a>
-                        </p>
-                        <p>
-                            <a href="https://www.youtube.com/channel/UCc7PXphTYb6uo_tsgNh5KdQ" class="linkedin"><i
-                                    class="bi bi-youtube"></i></i></a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="bi bi-pin me-3"></i>Little Flower Engineering Institute
-                            NH - 544, Cochin University P.O.,
-                            South Kalamassery,
-                            Kochi-682022, Kerala, India</p>
-                        <p>
-                            <i class="bi bi-envelope me-3"></i>
-                            info@littleflower.ac.in
-                        </p>
-                        <p><i class="bi bi-phone me-3"></i>+91-484-2541206</p>
-                        <p><i class="bi bi-phone me-3"></i>+91 9778914284</p>
-                        <p><i class="bi bi-phone me-3"></i>+91 9074405811</p>
-                        <p><i class="bi bi-phone me-3"></i>0484 294 8320</p>
-                    </div>
-                    <!-- Grid column -->
                 </div>
-                <!-- Grid row -->
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Quick Access</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="product.html">Product & Services</a></li>
+                        <li><a href="facility.html">Facilities</a></li>
+                        <li><a href="portfolio-index.html">Portfolio</a></li>
+                        <li><a href="contact.html">contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
+                        <li><a href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
+                        <li><a href="service-3.html">Sun Control & Safety Film</a></li>
+                        <li><a href="service-4.html">LED Signages</a></li>
+                        <li><a href="service-5.html">Fire Safety Signages</a></li>
+                        <li><a href="service-6.html">wayfinding Signages</a></li>
+                        <li><a href="service-7.html">Printed & Mounted Canvas</a></li>
+                        <li><a href="service-8.html">3M™ Safety-Walk</a></li>
+                        <li><a href="service-9.html">3M™ Nomad™ Matting</a></li>
+                        <li><a href="service-10.html">Internal signages</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Contact Us</h4>
+                    <p>41/1205, Kunjattu Road Padivattom, Edappally P O, Ernakulam, Kerala 682024</p>
+                    <p class="mt-4"><strong>Phone:</strong> <span>+91 9526 007 700</span></p>
+                    <p><strong>Email:</strong> <span>enquiry@zoominnovation.com</span></p>
+                </div>
+
             </div>
-        </section>
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2023 Copyright:
-            <a class="text-reset fw-bold" href="https://www.nesatechnologies.com/">Nesa Technologies</a>
         </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-    <!-- End Footer -->
 
+        <div class="container copyright text-center mt-4">
+            <p>&copy; <span>Copyright</span> <strong class="px-1">Zoom Innovation</strong> <span>All Rights
+                    Reserved</span></p>
+            <div class="credits">
+                Designed by <a href="https://www.nesatechnologies.com/">Nesa Technologies</a>
+            </div>
+        </div>
+
+    </footer><!-- End Footer -->
     <!--============= script =============-->
 
 
@@ -396,6 +496,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+
+    <script>
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-opacity-off";
+        }
+    </script>
+
+
+
 
     <script src="assets/js/script.js"></script>
     <!--============= script End =============-->
