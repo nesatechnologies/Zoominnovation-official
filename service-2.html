@@ -2,443 +2,503 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="assets/img/Favicon.png">
+  <link rel="icon" href="assets/img/Favicon.png">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/product-styles.css">
-    <link href="portfolio-assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
 
-    <title>Zoom Innovation</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="portfolio-assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+
+  <title>Zoom Innovation</title>
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+  <!-- Navigation Bar -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-          <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
-    
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">&#9776;</span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-    
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Product & Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
-                  <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
-                  <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
-                  <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
-                  <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
-                  <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
-                  <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
-                  <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
-                  <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
-                  <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
-                </ul>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link" href="facility.html" tabindex="-1" aria-disabled="true">Facilities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio-index.html" tabindex="-1" aria-disabled="true">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">contact Us</a>
-              </li>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0"><img src="assets/img/logo-main.png"
+          alt="" class="img-fluid"></a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown has-dropdown"><a href="product.html" class="active"><span>Product & Services</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
+              <li><a class="dropdown-item active" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
+              <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
+              <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
+              <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
+              <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
+              <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
+              <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
+              <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
+              <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
             </ul>
-    
-          </div>
-    
-          <img src="assets/img/3m-logo.png" alt="" class="img-fluid sub-logo">
-    
-          <span onclick="openNav()" class="side-bar">&#9776; </span>
-        </div>
+          </li>
+          <li><a href="facility.html">Facilities</a></li>
+          <li><a href="portfolio-index.html">portfolio</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+        <img src="assets/img/3m-logo.png" alt="" class="sub-logo">
+
+        <span onclick="openNav()" class="side-bar">&#9776; </span>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-    
-    
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <div class="container">
-            <div class="overlay-index">
-    
-              <h1>Products & Services</h1>
-              <hr class="bg-light border-4 border-top border-light">
-              <div class="d-flex align-items-start">
-    
-                <!-- Tab Content Button -->
-    
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    
-                  <button class="nav-link active" id="v-pills-one-tab" data-bs-toggle="pill" data-bs-target="#v-pills-one"
-                    type="button" role="tab" aria-controls="v-pills-one" aria-selected="true">Wall Graphics</button>
-    
-                  <button class="nav-link" id="v-pills-two-tab" data-bs-toggle="pill" data-bs-target="#v-pills-two"
-                    type="button" role="tab" aria-controls="v-pills-two" aria-selected="false">Frosted Films & Clear
-                    Graphics</button>
-    
-                  <button class="nav-link" id="v-pills-three-tab" data-bs-toggle="pill" data-bs-target="#v-pills-three"
-                    type="button" role="tab" aria-controls="v-pills-three" aria-selected="false">Sun Control & Saftey
-                    Films</button>
-    
-                  <button class="nav-link" id="v-pills-four-tab" data-bs-toggle="pill" data-bs-target="#v-pills-four"
-                    type="button" role="tab" aria-controls="v-pills-four" aria-selected="false">LED Signages & Non LED
-                    Signages</button>
-    
-                  <button class="nav-link" id="v-pills-five-tab" data-bs-toggle="pill" data-bs-target="#v-pills-five"
-                    type="button" role="tab" aria-controls="v-pills-five" aria-selected="false">Fire Safety
-                    Signages</button>
-    
-                  <button class="nav-link" id="v-pills-six-tab" data-bs-toggle="pill" data-bs-target="#v-pills-six"
-                    type="button" role="tab" aria-controls="v-pills-six" aria-selected="true">Wayfinding Signages</button>
-    
-                  <button class="nav-link" id="v-pills-seven-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seven"
-                    type="button" role="tab" aria-controls="v-pills-seven" aria-selected="false">Printed & Mounted
-                    Canvas</button>
-    
-                  <button class="nav-link" id="v-pills-eight-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eight"
-                    type="button" role="tab" aria-controls="v-pills-eight" aria-selected="false">3m Anti-Skid ape</button>
-    
-                  <button class="nav-link" id="v-pills-nine-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nine"
-                    type="button" role="tab" aria-controls="v-pills-nine" aria-selected="false">3m Entryway Matting Sysytem
-                    (EWS)</button>
-    
-                  <button class="nav-link" id="v-pills-ten-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ten"
-                    type="button" role="tab" aria-controls="v-pills-ten" aria-selected="false">Internal Signages</button>
-    
-                </div>
-    
-                <!-- Tab Content Start -->
-    
-                <div class="tab-content" id="v-pills-tabContent">
-    
-                  <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel" aria-labelledby="v-pills-one-tab">
-    
-                    <div class="row">
-    
-                      <div class="col-lg-4" data-aos="fade-right">
-                        <div class="img__wrap">
-                          <img src="assets/img/product/product-1-1.png" class="image-zoom-effect">
-                          <h3 class="img__description">This image looks super neat.</h3>
-                        </div>
-                      </div>
-    
-                      <div class="col-lg-4" data-aos="fade-right">
-                        <div class="img__wrap">
-                          <img src="assets/img/product/product-1-2.png" class="image-zoom-effect">
-                          <h3 class="img__description">This image looks super neat.</h3>
-                        </div>
-                      </div>
-                      <div class="col-lg-4" data-aos="fade-right">
-                        <div class="img__wrap">
-                          <img src="assets/img/product/product-1-3.png" class="image-zoom-effect">
-                          <h3 class="img__description">This image looks super neat.</h3>
-                        </div>
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-two" role="tabpanel" aria-labelledby="v-pills-two-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/content/product-2.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/content/product-3.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/content/product-4.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-three" role="tabpanel" aria-labelledby="v-pills-three-tab">.
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-2.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-3.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-four" role="tabpanel" aria-labelledby="v-pills-four-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-4.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-5.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-6.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-five" role="tabpanel" aria-labelledby="v-pills-five-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-5.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-5-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-5-2.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-six" role="tabpanel" aria-labelledby="v-pills-six-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-6-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-6-2.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-6-3.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-seven" role="tabpanel" aria-labelledby="v-pills-seven-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-7.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-11.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-11-1.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-eight" role="tabpanel" aria-labelledby="v-pills-eight-tab">.
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-8.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-8-1.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-nine" role="tabpanel" aria-labelledby="v-pills-nine-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9-2.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-ten" role="tabpanel" aria-labelledby="v-pills-ten-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-8.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-9.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-10.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                </div>
-    
-                <!-- Tab Content End -->
-    
-              </div>
-    
+
+    </div>
+  </header>
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <div class="container">
+        <div class="overlay-index">
+
+          <h1>Products & Services</h1>
+          <hr class="bg-light border-4 border-top border-light">
+          <div class="d-flex align-items-start">
+
+            <!-- Tab Content Button -->
+
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+              <button class="nav-link active" id="v-pills-one-tab" data-bs-toggle="pill" data-bs-target="#v-pills-one"
+                type="button" role="tab" aria-controls="v-pills-one" aria-selected="true">Wall Graphics</button>
+
+              <button class="nav-link" id="v-pills-two-tab" data-bs-toggle="pill" data-bs-target="#v-pills-two"
+                type="button" role="tab" aria-controls="v-pills-two" aria-selected="false">Frosted Films & Clear
+                Graphics</button>
+
+              <button class="nav-link" id="v-pills-three-tab" data-bs-toggle="pill" data-bs-target="#v-pills-three"
+                type="button" role="tab" aria-controls="v-pills-three" aria-selected="false">Sun Control & Saftey
+                Films</button>
+
+              <button class="nav-link" id="v-pills-four-tab" data-bs-toggle="pill" data-bs-target="#v-pills-four"
+                type="button" role="tab" aria-controls="v-pills-four" aria-selected="false">LED Signages & Non LED
+                Signages</button>
+
+              <button class="nav-link" id="v-pills-five-tab" data-bs-toggle="pill" data-bs-target="#v-pills-five"
+                type="button" role="tab" aria-controls="v-pills-five" aria-selected="false">Fire Safety
+                Signages</button>
+
+              <button class="nav-link" id="v-pills-six-tab" data-bs-toggle="pill" data-bs-target="#v-pills-six"
+                type="button" role="tab" aria-controls="v-pills-six" aria-selected="true">Wayfinding Signages</button>
+
+              <button class="nav-link" id="v-pills-seven-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seven"
+                type="button" role="tab" aria-controls="v-pills-seven" aria-selected="false">Printed & Mounted
+                Canvas</button>
+
+              <button class="nav-link" id="v-pills-eight-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eight"
+                type="button" role="tab" aria-controls="v-pills-eight" aria-selected="false">3m Anti-Skid ape</button>
+
+              <button class="nav-link" id="v-pills-nine-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nine"
+                type="button" role="tab" aria-controls="v-pills-nine" aria-selected="false">3m Entryway Matting Sysytem
+                (EWS)</button>
+
+              <button class="nav-link" id="v-pills-ten-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ten"
+                type="button" role="tab" aria-controls="v-pills-ten" aria-selected="false">Internal Signages</button>
+
             </div>
+
+            <!-- Tab Content Start -->
+
+            <div class="tab-content" id="v-pills-tabContent">
+
+              <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel" aria-labelledby="v-pills-one-tab">
+
+                <div class="row">
+
+                  <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-1-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-1-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-1-3.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-two" role="tabpanel" aria-labelledby="v-pills-two-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/content/product-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/content/product-3.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/content/product-4.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-three" role="tabpanel" aria-labelledby="v-pills-three-tab">.
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-3.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-four" role="tabpanel" aria-labelledby="v-pills-four-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-4.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-5.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-6.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-five" role="tabpanel" aria-labelledby="v-pills-five-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-5.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-5-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-5-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-six" role="tabpanel" aria-labelledby="v-pills-six-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-6-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-6-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-6-3.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-seven" role="tabpanel" aria-labelledby="v-pills-seven-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-7.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-11.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-11-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-eight" role="tabpanel" aria-labelledby="v-pills-eight-tab">.
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-8.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-9.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-8-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-nine" role="tabpanel" aria-labelledby="v-pills-nine-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-9.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-9-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-9-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-ten" role="tabpanel" aria-labelledby="v-pills-ten-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-8.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-9.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-10.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Tab Content End -->
+
           </div>
+
         </div>
       </div>
-    
+    </div>
+  </div>
 
-    <!-- Navigation Bar End -->
+  <!-- Navigation Bar End -->
 
-    <!-- Product section-->
-    <section class="py-2 services">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="row gx-4 gx-lg-5 align-items-center">
-                <div class="col-md-6">
-                    <!-- <div class="product-slider">
+  <!-- Product section-->
+  <section class="py-2 services">
+    <div class="container px-4 px-lg-5 my-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+        <div class="col-md-6">
+          <!-- <div class="product-slider">
                         <div class="product-feature">
                         </div>
                         <div class="product-overlay">
                         </div>
                     </div> -->
-                    <div class="content" style="max-width:1200px">
-                        <img class="mySlides" src="assets/img/portfolio/portfolio-1.png" style="width:100%;">
-                        <img class="mySlides" src="assets/img/portfolio/portfolio-2.png" style="width:100%;display:none">
-                        <img class="mySlides" src="assets/img/portfolio/portfolio-4.png" style="width:100%;display:none">
+          <div class="content" style="max-width:1200px">
+            <img class="mySlides" src="assets/img/portfolio/portfolio-1.png" style="width:100%;">
+            <img class="mySlides" src="assets/img/portfolio/portfolio-2.png" style="width:100%;display:none">
+            <img class="mySlides" src="assets/img/portfolio/portfolio-4.png" style="width:100%;display:none">
 
-                        <div class="row-padding w3-section d-flex">
-                            <div class="col s4">
-                                <img class="demo w3-opacity " src="assets/img/portfolio/portfolio-1.png"
-                                    onclick="currentDiv(1)">
-                            </div>
-                            <div class="col s4">
-                                <img class="demo w3-opacity " src="assets/img/portfolio/portfolio-2.png"
-                                    onclick="currentDiv(2)">
-                            </div>
-                            <div class="col s4">
-                                <img class="demo w3-opacity" src="assets/img/portfolio/portfolio-4.png"
-                                    onclick="currentDiv(3)">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h1 class="display-5 fw-bolder">Frosted/Dusted/Fasara/Clear Graphics</h1>
-                    <div class="fs-5 mb-5">
-                    </div>
-                    <p class="lead">Give your tenants custom and elegant interiors that provide enhanced privacy without
-                        sacrificing natural light. 3M™ Glass Finishes let you define spaces without confining them.
-
-                        Windows and glass provide perfect surfaces for businesses to expand their brand, enhance privacy
-                        and personalize their space. 3M vinyl and non-vinyl window graphics offer a wide range of
-                        solutions that support their needs.
-
-                        Customise your space to suit any taste. You can design a space that’s private without making it
-                        feel closed off with 3M™ Glass Finishes. Frosted, dusted, textured — you name it, we have the
-                        finish to match your style. Create the privacy you need with a design that’s all your own.</p>
-                    <div class="d-flex mt-5">
-                        <button class="product-btn flex-shrink-0" type="button">
-                            <i class="bi-phone me-1"></i>
-                            Enquire Now
-                        </button>
-                    </div>
-                </div>
+            <div class="row-padding w3-section d-flex">
+              <div class="col s4">
+                <img class="demo w3-opacity " src="assets/img/portfolio/portfolio-1.png" onclick="currentDiv(1)">
+              </div>
+              <div class="col s4">
+                <img class="demo w3-opacity " src="assets/img/portfolio/portfolio-2.png" onclick="currentDiv(2)">
+              </div>
+              <div class="col s4">
+                <img class="demo w3-opacity" src="assets/img/portfolio/portfolio-4.png" onclick="currentDiv(3)">
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+        <div class="col-md-6">
+          <h1 class="display-5 fw-bolder">Frosted/Dusted/Fasara/Clear Graphics</h1>
+          <div class="fs-5 mb-5">
+          </div>
+          <p class="lead">Give your tenants custom and elegant interiors that provide enhanced privacy without
+            sacrificing natural light. 3M™ Glass Finishes let you define spaces without confining them.
 
-    <div class="container">
-        <h1 class="display-5 fw-bolder">Achieve privacy that's personal</h1>
-        <p class="lead">Customise your space to suit any taste. You can design a space that’s private without making it feel closed off with 3M™ Glass Finishes. Frosted, dusted, textured — you name it, we have the finish to match your style. Create the privacy you need with a design that’s all your own.</p>
-        <ul>
-            <li><i class="bi bi-check"></i> <span>Define interior spaces while keeping an open feel
-              </span></li>
-            <li><i class="bi bi-check"></i><span>Customise privacy without sacrificing natural light.</span>
-            </li>
-            <li><i class="bi bi-check"></i> <span>Create die-cut designs to promote your brand</span>.
-            </li>
-            <li><i class="bi bi-check"></i> <span>Conceal areas from the public</span>.
-            </li>
-            <li><i class="bi bi-check"></i> <span>Ideal for interior glass doors or inside surfaces of windows</span>.
-            </li>
-          </ul>
+            Windows and glass provide perfect surfaces for businesses to expand their brand, enhance privacy
+            and personalize their space. 3M vinyl and non-vinyl window graphics offer a wide range of
+            solutions that support their needs.
+
+            Customise your space to suit any taste. You can design a space that’s private without making it
+            feel closed off with 3M™ Glass Finishes. Frosted, dusted, textured — you name it, we have the
+            finish to match your style. Create the privacy you need with a design that’s all your own.</p>
+          <div class="d-flex mt-5">
+            <a href="contact.html"><button class="product-btn flex-shrink-0" type="button">
+              <i class="bi-phone me-1"></i>
+              Enquire Now
+          </button></a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Related items section-->
+  <div class="container">
+    <h1 class="display-5 fw-bolder">Achieve privacy that's personal</h1>
+    <p class="lead text-dark">Customise your space to suit any taste. You can design a space that’s private without
+      making it feel closed off with 3M™ Glass Finishes. Frosted, dusted, textured — you name it, we have the finish to
+      match your style. Create the privacy you need with a design that’s all your own.</p>
+    <ul>
+      <li><i class="bi bi-check"></i> <span>Define interior spaces while keeping an open feel
+        </span></li>
+      <li><i class="bi bi-check"></i><span>Customise privacy without sacrificing natural light.</span>
+      </li>
+      <li><i class="bi bi-check"></i> <span>Create die-cut designs to promote your brand</span>.
+      </li>
+      <li><i class="bi bi-check"></i> <span>Conceal areas from the public</span>.
+      </li>
+      <li><i class="bi bi-check"></i> <span>Ideal for interior glass doors or inside surfaces of windows</span>.
+      </li>
+    </ul>
+  </div>
 
-    <section class="py-5 bg-light">
-        <div class="container px-4 px-lg-5 mt-5">
-            <h2 class="fw-bolder mb-4">Related works</h2>
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="assets/img/portfolio/portfolio-1.png" alt="..." />
+  <!-- Related items section-->
 
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
+  <section class="py-5 bg-light">
+    <div class="container px-4 px-lg-5 mt-5">
+      <h2 class="fw-bolder mb-4">Related works</h2>
+      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        <div class="col mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="assets/img/portfolio/portfolio-1.png" alt="..." />
 
-                        <img class="card-img-top" src="assets/img/portfolio/portfolio-2.png" alt="..." />
-                    </div>
-                </div>
-
-                <div class="col mb-5">
-                    <div class="card h-100">
-
-                        <img class="card-img-top" src="assets/img/portfolio/portfolio-3.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="assets/img/portfolio/portfolio-4.png" alt="..." />
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+        <div class="col mb-5">
+          <div class="card h-100">
+
+            <img class="card-img-top" src="assets/img/portfolio/portfolio-2.png" alt="..." />
+          </div>
+        </div>
+
+        <div class="col mb-5">
+          <div class="card h-100">
+
+            <img class="card-img-top" src="assets/img/portfolio/portfolio-3.png" alt="..." />
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img class="card-img-top" src="assets/img/portfolio/portfolio-4.png" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
 
 
-   <!-- ======= Footer ======= -->
-   <footer id="footer" class="footer">
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -446,7 +506,9 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/logo-white.png">
           </a>
-          <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field in Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in graphics, signage and glass films. With excellent design, unique combinations of materials and technology.</p>
+          <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this field in
+            Kerala. We are equipped with the most modern facilities to deliver high-quality work with zeal in graphics,
+            signage and glass films. With excellent design, unique combinations of materials and technology.</p>
           <div class="social-links d-flex mt-4">
             <a href="https://www.facebook.com/zoominnovationcochin/"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/zoominnovation007/"><i class="bi bi-instagram"></i></a>
@@ -493,7 +555,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>&copy; <span>Copyright</span> <strong class="px-1">Zoom Innovation</strong> <span>All Rights Reserved</span></p>
+      <p>&copy; <span>Copyright</span> <strong class="px-1">Zoom Innovation</strong> <span>All Rights Reserved</span>
+      </p>
       <div class="credits">
         Designed by <a href="https://www.nesatechnologies.com/">Nesa Technologies</a>
       </div>
@@ -501,51 +564,51 @@
 
   </footer><!-- End Footer -->
 
-    <!--============= script =============-->
+  <!--============= script =============-->
 
 
-    <!-- slick slider -->
+  <!-- slick slider -->
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-    <!-- slick slider -->
+  <!-- slick slider -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-
-    <script>
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-opacity-off";
-        }
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 
+  <script>
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-opacity-off";
+    }
+  </script>
 
 
-    <script src="assets/js/script.js"></script>
-    <!--============= script End =============-->
+
+
+  <script src="assets/js/script.js"></script>
+  <!--============= script End =============-->
 
 
 </body>

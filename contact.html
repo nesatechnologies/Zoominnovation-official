@@ -23,300 +23,364 @@
 
     <!-- Navigation Bar -->
 
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-          <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
-    
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">&#9776;</span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-    
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Product & Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
-                  <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
-                  <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
-                  <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
-                  <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
-                  <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
-                  <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
-                  <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
-                  <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
-                  <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
-                </ul>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link" href="facility.html" tabindex="-1" aria-disabled="true">Facilities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio-index.html" tabindex="-1" aria-disabled="true">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">contact Us</a>
-              </li>
-            </ul>
-    
-          </div>
-    
-          <img src="assets/img/3m-logo.png" alt="" class="img-fluid sub-logo">
-    
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0"><img src="assets/img/logo-main.png"
+            alt="" class="img-fluid"></a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown has-dropdown"><a href="product.html"><span>Product & Services</span> <i
+                  class="bi bi-chevron-down"></i></a>
+              <ul class="dd-box-shadow">
+                <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
+                <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
+                <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
+                <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
+                <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
+                <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
+                <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
+                <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
+                <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
+                <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
+              </ul>
+            </li>
+            <li><a href="facility.html">Facilities</a></li>
+            <li><a href="portfolio-index.html">portfolio</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+  
+          </ul>
+          <img src="assets/img/3m-logo.png" alt="" class="sub-logo">
+  
           <span onclick="openNav()" class="side-bar">&#9776; </span>
-        </div>
-      </nav>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+      </div>
+    </header>
     
-    
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <div class="container">
-            <div class="overlay-index">
-    
-              <h1>Products & Services</h1>
-              <hr class="bg-light border-4 border-top border-light">
-              <div class="d-flex align-items-start">
-    
-                <!-- Tab Content Button -->
-    
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    
-                  <button class="nav-link active" id="v-pills-one-tab" data-bs-toggle="pill" data-bs-target="#v-pills-one"
-                    type="button" role="tab" aria-controls="v-pills-one" aria-selected="true">Wall Graphics</button>
-    
-                  <button class="nav-link" id="v-pills-two-tab" data-bs-toggle="pill" data-bs-target="#v-pills-two"
-                    type="button" role="tab" aria-controls="v-pills-two" aria-selected="false">Frosted Films & Clear
-                    Graphics</button>
-    
-                  <button class="nav-link" id="v-pills-three-tab" data-bs-toggle="pill" data-bs-target="#v-pills-three"
-                    type="button" role="tab" aria-controls="v-pills-three" aria-selected="false">Sun Control & Saftey
-                    Films</button>
-    
-                  <button class="nav-link" id="v-pills-four-tab" data-bs-toggle="pill" data-bs-target="#v-pills-four"
-                    type="button" role="tab" aria-controls="v-pills-four" aria-selected="false">LED Signages & Non LED
-                    Signages</button>
-    
-                  <button class="nav-link" id="v-pills-five-tab" data-bs-toggle="pill" data-bs-target="#v-pills-five"
-                    type="button" role="tab" aria-controls="v-pills-five" aria-selected="false">Fire Safety
-                    Signages</button>
-    
-                  <button class="nav-link" id="v-pills-six-tab" data-bs-toggle="pill" data-bs-target="#v-pills-six"
-                    type="button" role="tab" aria-controls="v-pills-six" aria-selected="true">Wayfinding Signages</button>
-    
-                  <button class="nav-link" id="v-pills-seven-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seven"
-                    type="button" role="tab" aria-controls="v-pills-seven" aria-selected="false">Printed & Mounted
-                    Canvas</button>
-    
-                  <button class="nav-link" id="v-pills-eight-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eight"
-                    type="button" role="tab" aria-controls="v-pills-eight" aria-selected="false">3m Anti-Skid ape</button>
-    
-                  <button class="nav-link" id="v-pills-nine-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nine"
-                    type="button" role="tab" aria-controls="v-pills-nine" aria-selected="false">3m Entryway Matting Sysytem
-                    (EWS)</button>
-    
-                  <button class="nav-link" id="v-pills-ten-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ten"
-                    type="button" role="tab" aria-controls="v-pills-ten" aria-selected="false">Internal Signages</button>
-    
-                </div>
-    
-                <!-- Tab Content Start -->
-    
-                <div class="tab-content" id="v-pills-tabContent">
-    
-                  <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel" aria-labelledby="v-pills-one-tab">
-    
-                    <div class="row">
-    
-                      <div class="col-lg-4" data-aos="fade-right">
-                        <div class="img__wrap">
-                          <img src="assets/img/product/product-1-1.png" class="image-zoom-effect">
-                          <h3 class="img__description">This image looks super neat.</h3>
-                        </div>
-                      </div>
-    
-                      <div class="col-lg-4" data-aos="fade-right">
-                        <div class="img__wrap">
-                          <img src="assets/img/product/product-1-2.png" class="image-zoom-effect">
-                          <h3 class="img__description">This image looks super neat.</h3>
-                        </div>
-                      </div>
-                      <div class="col-lg-4" data-aos="fade-right">
-                        <div class="img__wrap">
-                          <img src="assets/img/product/product-1-3.png" class="image-zoom-effect">
-                          <h3 class="img__description">This image looks super neat.</h3>
-                        </div>
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-two" role="tabpanel" aria-labelledby="v-pills-two-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/content/product-2.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/content/product-3.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/content/product-4.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-three" role="tabpanel" aria-labelledby="v-pills-three-tab">.
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-2.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-3.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-four" role="tabpanel" aria-labelledby="v-pills-four-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-4.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-5.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-6.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-five" role="tabpanel" aria-labelledby="v-pills-five-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-5.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-5-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-5-2.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-six" role="tabpanel" aria-labelledby="v-pills-six-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-6-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-6-2.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-6-3.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-seven" role="tabpanel" aria-labelledby="v-pills-seven-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-7.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-11.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-11-1.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-eight" role="tabpanel" aria-labelledby="v-pills-eight-tab">.
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-8.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-8-1.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-nine" role="tabpanel" aria-labelledby="v-pills-nine-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9-2.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-ten" role="tabpanel" aria-labelledby="v-pills-ten-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-8.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-9.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-10.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                </div>
-    
-                <!-- Tab Content End -->
-    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <div class="container">
+          <div class="overlay-index">
+  
+            <h1>Products & Services</h1>
+            <hr class="bg-light border-4 border-top border-light">
+            <div class="d-flex align-items-start">
+  
+              <!-- Tab Content Button -->
+  
+              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  
+                <button class="nav-link active" id="v-pills-one-tab" data-bs-toggle="pill" data-bs-target="#v-pills-one"
+                  type="button" role="tab" aria-controls="v-pills-one" aria-selected="true">Wall Graphics</button>
+  
+                <button class="nav-link" id="v-pills-two-tab" data-bs-toggle="pill" data-bs-target="#v-pills-two"
+                  type="button" role="tab" aria-controls="v-pills-two" aria-selected="false">Frosted Films & Clear
+                  Graphics</button>
+  
+                <button class="nav-link" id="v-pills-three-tab" data-bs-toggle="pill" data-bs-target="#v-pills-three"
+                  type="button" role="tab" aria-controls="v-pills-three" aria-selected="false">Sun Control & Saftey
+                  Films</button>
+  
+                <button class="nav-link" id="v-pills-four-tab" data-bs-toggle="pill" data-bs-target="#v-pills-four"
+                  type="button" role="tab" aria-controls="v-pills-four" aria-selected="false">LED Signages & Non LED
+                  Signages</button>
+  
+                <button class="nav-link" id="v-pills-five-tab" data-bs-toggle="pill" data-bs-target="#v-pills-five"
+                  type="button" role="tab" aria-controls="v-pills-five" aria-selected="false">Fire Safety
+                  Signages</button>
+  
+                <button class="nav-link" id="v-pills-six-tab" data-bs-toggle="pill" data-bs-target="#v-pills-six"
+                  type="button" role="tab" aria-controls="v-pills-six" aria-selected="true">Wayfinding Signages</button>
+  
+                <button class="nav-link" id="v-pills-seven-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seven"
+                  type="button" role="tab" aria-controls="v-pills-seven" aria-selected="false">Printed & Mounted
+                  Canvas</button>
+  
+                <button class="nav-link" id="v-pills-eight-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eight"
+                  type="button" role="tab" aria-controls="v-pills-eight" aria-selected="false">3m Anti-Skid ape</button>
+  
+                <button class="nav-link" id="v-pills-nine-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nine"
+                  type="button" role="tab" aria-controls="v-pills-nine" aria-selected="false">3m Entryway Matting Sysytem
+                  (EWS)</button>
+  
+                <button class="nav-link" id="v-pills-ten-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ten"
+                  type="button" role="tab" aria-controls="v-pills-ten" aria-selected="false">Internal Signages</button>
+  
               </div>
-    
+  
+              <!-- Tab Content Start -->
+  
+              <div class="tab-content" id="v-pills-tabContent">
+  
+                <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel" aria-labelledby="v-pills-one-tab">
+  
+                  <div class="row">
+  
+                    <div class="col-lg-4" data-aos="fade-right">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-1-1.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+  
+                    <div class="col-lg-4" data-aos="fade-right">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-1-2.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-right">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-1-3.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-two" role="tabpanel" aria-labelledby="v-pills-two-tab">
+  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/content/product-2.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/content/product-3.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/content/product-4.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-three" role="tabpanel" aria-labelledby="v-pills-three-tab">.
+  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/service-1.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/service-2.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-3.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-four" role="tabpanel" aria-labelledby="v-pills-four-tab">
+  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/service-4.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/service-5.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/service-6.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-five" role="tabpanel" aria-labelledby="v-pills-five-tab">
+  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-5.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-5-1.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-5-2.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-six" role="tabpanel" aria-labelledby="v-pills-six-tab">
+  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-6-1.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-6-2.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-6-3.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-seven" role="tabpanel" aria-labelledby="v-pills-seven-tab">
+  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-7.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/service-11.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/service-11-1.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-eight" role="tabpanel" aria-labelledby="v-pills-eight-tab">.
+  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-8.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-9.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-8-1.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-nine" role="tabpanel" aria-labelledby="v-pills-nine-tab">
+  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-9.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-9-1.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/product-9-2.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-ten" role="tabpanel" aria-labelledby="v-pills-ten-tab">
+  
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/service-8.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/service-9.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="img__wrap image-zoom-effect">
+                        <img src="assets/img/product/service-10.png" class="image-zoom-effect">
+                        <div class="img__description"></div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <!-- Tab Content End -->
+  
             </div>
+  
           </div>
         </div>
       </div>
+    </div>
+  
     
 
     <!-- Navigation Bar End -->
@@ -337,7 +401,7 @@
 
     <!-- ==== Contact Content ==== -->
 
-    <section>
+    <section class="mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-18 mb-5">
@@ -358,7 +422,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-18 mb-5">
+                <div class="col-lg-6 col-md-12 col-sm-18 mb-5 contact-img">
                     <div class="hero-index">
                         <div class="hero-item" data-aos="fade-left" data-aos-duration="1000">
                             <img src="assets/img/content/hero-01.png" class="img-2" alt="...">
@@ -372,46 +436,74 @@
 
 
     <!--Contact Info-->
-    <div class="container">
-        <h4 class="text-center mt-5">Reach Us</h4>
-        <div class="row mt-5">
-            <div class="col-sm text-center" data-aos="zoom-in-up" data-aos-duration="1000">
-                <h5 class="mt-3"><i class="bi bi-geo-alt">+91 73063377006</i></h5>
+    <!-- Contact Section - Home Page -->
+    <section id="contact" class="contact">
+
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>41/1205, Kunjattu Road
+                    Alinchuvadu Palarivattom
+                    Kochi 682 024, Kerala, India2</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+91 9526 007 700</p>
+                  <p>+91 9526 917 700</p>
+                  <p>+91 484 486 1700</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>sales@zoominnovation.com</p>
+                  <p>suneesh@zoominnovation.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday</p>
+                  <p>9:00AM - 05:00PM</p>
+                </div>
+              </div><!-- End Info Item -->
+
             </div>
-            <div class="col-sm text-center" data-aos="zoom-in-up" data-aos-duration="2000">
-                <h5 class="mt-3"><i class="bi bi-envelope">info@sinrorobotics.com</i></h5>
-            </div>
-            <div class="col-sm text-center" data-aos="zoom-in-up" data-aos-duration="3000">
-                <h5 class="mt-3 text-center"><i class="bi bi-geo-alt">Sinro Arcade NH bypass,
-                        near palarivattom flyover,
-                        cochin.682032</i></h5>
-            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7858.221232843717!2d76.315041!3d10.007721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080debe786f425%3A0x9766a5e8c02a3ad1!2sTrive%20Systems%20-%20Sun%20control%20film%20dealer%2C%20Window%20film%20specialist%2C%20Authorised%20sun%20film%20supplier%2C%20LED%20signage%20manufacturer.!5e0!3m2!1sen!2sin!4v1700054534052!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div><!-- End Contact Form -->
+
         </div>
-        <div class="row mt-5">
-            <div class="col-sm text-center" data-aos="fade-up">
-                <img src="assets/img/icons/ind.png" style="width: 50px;">
-                <h5 class="mt-3">+91 73063377006</h5>
-            </div>
-            <div class="col-sm text-center" data-aos="fade-up">
-                <img src="assets/img/icons/uae.png" style="width: 50px;">
-                <h5 class="mt-3">+91 73063377006</h5>
-            </div>
-            <div class="col-sm text-center" data-aos="fade-up">
-                <img src="assets/img/icons/usa.png" style="width: 50px;">
-                <h5 class="mt-3">+91 73063377006</h5>
-            </div>
-        </div>
-    </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
 
     <!--Section End-->
-
-    <!--Google Map-->
-
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.2935457961785!2d76.31237161458186!3d9.992593192856228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d1a4e0a8587%3A0xf70d7e9a517807b3!2sNESA%20Technologies!5e0!3m2!1sen!2sin!4v1663335495735!5m2!1sen!2sin"
-        class="mt-5" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
     <!--Section End-->
 
     <!-- ==== Contact Content End ==== -->

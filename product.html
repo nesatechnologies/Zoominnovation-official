@@ -23,27 +23,19 @@
 
   <!-- Navigation Bar -->
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle  active" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Product & Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0"><img src="assets/img/logo-main.png"
+          alt="" class="img-fluid"></a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown has-dropdown"><a href="product.html" class="active"><span>Product & Services</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
               <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
               <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
               <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
@@ -56,21 +48,19 @@
               <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="facility.html" tabindex="-1" aria-disabled="true">Facilities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html" tabindex="-1" aria-disabled="true">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">contact Us</a>
-          </li>
-        </ul>
-      </div>
+          <li><a href="facility.html">Facilities</a></li>
+          <li><a href="portfolio-index.html">portfolio</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
 
-      <span onclick="openNav()">&#9776; </span>
+        </ul>
+        <img src="assets/img/3m-logo.png" alt="" class="sub-logo">
+
+        <span onclick="openNav()" class="side-bar">&#9776; </span>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
     </div>
-  </nav>
+  </header>
 
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -111,8 +101,7 @@
             <div class="product-content image-zoom-effect">
               <img src="assets/img/product/product-1.png" alt="" class="image-fluid">
               <h3 class="mt-3">Wall Graphics/Vinyl Graphics</h3>
-              <a href="service-1.html"><button class="product-btn">View More<i
-                    class="bi bi-arrow-right-circle-fill"></i></button></a>
+              <a href="service-1.html"><button class="product-btn">View More</button></a>
             </div>
           </div>
 
@@ -120,7 +109,7 @@
             <div class="product-content image-zoom-effect">
               <img src="assets/img/product/product-2.png" alt="" class="image-fluid">
               <h3 class="mt-3">Frosted/Dusted/Fasara/Clear Graphics</h3>
-              <a href=""><button class="product-btn">View More<i class="bi bi-arrow-right-circle-fill"></i></button></a>
+              <a href=""><button class="product-btn">View More</button></a>
             </div>
           </div>
 
@@ -128,7 +117,7 @@
             <div class="product-content image-zoom-effect">
               <img src="assets/img/product/product-3.png" alt="" class="image-fluid">
               <h3 class="mt-3">Sun Control & Safety Film</h3>
-              <a href=""><button class="product-btn">View More<i class="bi bi-arrow-right-circle-fill"></i></button></a>
+              <a href=""><button class="product-btn">View More</i></button></a>
             </div>
           </div>
 
@@ -136,7 +125,7 @@
             <div class="product-content image-zoom-effect">
               <img src="assets/img/product/product-4.png" alt="" class="image-fluid">
               <h3 class="mt-3">LED Signages</h3>
-              <a href=""><button class="product-btn">View More<i class="bi bi-arrow-right-circle-fill"></i></button></a>
+              <a href=""><button class="product-btn">View More</i></button></a>
             </div>
           </div>
 
@@ -144,7 +133,7 @@
             <div class="product-content image-zoom-effect">
               <img src="assets/img/product/product-5.png" alt="" class="image-fluid">
               <h3 class="mt-3">Fire Safety Signages</h3>
-              <a href=""><button class="product-btn">View More<i class="bi bi-arrow-right-circle-fill"></i></button></a>
+              <a href=""><button class="product-btn">View More</i></button></a>
             </div>
           </div>
 
@@ -152,7 +141,7 @@
             <div class="product-content image-zoom-effect">
               <img src="assets/img/product/product-6.png" alt="" class="image-fluid">
               <h3 class="mt-3">wayfinding and signage</h3>
-              <a href=""><button class="product-btn">View More<i class="bi bi-arrow-right-circle-fill"></i></button></a>
+              <a href=""><button class="product-btn">View More</i></button></a>
             </div>
           </div>
 
@@ -160,7 +149,7 @@
             <div class="product-content image-zoom-effect">
               <img src="assets/img/product/product-7.png" alt="" class="image-fluid">
               <h3 class="mt-3">Printed & Mounted Canvas</h3>
-              <a href=""><button class="product-btn">View More<i class="bi bi-arrow-right-circle-fill"></i></button></a>
+              <a href=""><button class="product-btn">View More</i></button></a>
             </div>
           </div>
 
@@ -168,7 +157,7 @@
             <div class="product-content image-zoom-effect">
               <img src="assets/img/product/product-8.png" alt="" class="image-fluid">
               <h3 class="mt-3">3M™ Safety-Walk™</h3>
-              <a href=""><button class="product-btn">View More<i class="bi bi-arrow-right-circle-fill"></i></button></a>
+              <a href=""><button class="product-btn">View More</i></button></a>
             </div>
           </div>
 
@@ -176,7 +165,7 @@
             <div class="product-content image-zoom-effect">
               <img src="assets/img/product/product-9.png" alt="" class="image-fluid">
               <h3 class="mt-3">3M™ Nomad™ Matting</h3>
-              <a href=""><button class="product-btn">View More<i class="bi bi-arrow-right-circle-fill"></i></button></a>
+              <a href=""><button class="product-btn">View More</i></button></a>
             </div>
           </div>
 
@@ -184,7 +173,7 @@
             <div class="product-content image-zoom-effect">
               <img src="assets/img/product/product-10.png" alt="" class="image-fluid">
               <h3 class="mt-3">Internal signages</h3>
-              <a href=""><button class="product-btn">View More<i class="bi bi-arrow-right-circle-fill"></i></button></a>
+              <a href=""><button class="product-btn">View More</i></button></a>
             </div>
           </div>
 

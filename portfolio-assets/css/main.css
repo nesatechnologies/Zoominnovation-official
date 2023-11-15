@@ -157,10 +157,10 @@ section {
 .header {
   --background-color: #ffffff;
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #000000;
   padding: 15px 0;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 9999;
 }
 
 .header .logo img {
@@ -175,17 +175,18 @@ section {
   color: var(--secondary-color);
 }
 
-.header .logo span {
-  color: var(--primary-color);
+.header .navmenu .side-bar {
+  color: #ffffff;
   font-size: 24px;
   font-weight: 600;
-  padding-left: 3px;
+  padding-left: 10px;
+  cursor: pointer;
 }
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-  color: var(--contrast-color);
-  background: var(--primary-color);
+  color: #f11111;
+  background: #000000;
   font-size: 14px;
   padding: 8px 26px;
   margin: 0;
@@ -200,9 +201,9 @@ section {
 }
 
 @media (max-width: 1200px) {
-  .header .logo {
-    order: 1;
-  }
+    /* .header .logo {
+      order: 1;
+    } */
 
   .header .btn-getstarted {
     order: 2;
@@ -257,11 +258,29 @@ section {
 
 /*--------------------------------------------------------------
 # Navigation Menu
+
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+
+
+.navmenu {
+  margin: auto;
+  display: contents;
+}
+
+@media (max-width: 812px) {
+
+  .navmenu {
+    margin: 0;
+  }
+}
+
+
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .navmenu ul {
@@ -305,13 +324,13 @@ section {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #f11111;
   }
 
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
+    background: #000000;
     display: block;
     position: absolute;
     visibility: hidden;
@@ -320,7 +339,7 @@ section {
     opacity: 0;
     transition: 0.3s;
     border-radius: 4px;
-    z-index: 99;
+    z-index: 1;
   }
 
   .navmenu .dropdown ul li {
@@ -331,7 +350,7 @@ section {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    color: var(--nav-dropdown-color);
+    color: #ffffff;
   }
 
   .navmenu .dropdown ul a i {
@@ -341,7 +360,7 @@ section {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
+    color: #ffffff;
   }
 
   .navmenu .dropdown:hover>ul {
@@ -430,6 +449,7 @@ section {
   }
 
   .navmenu ul {
+    height: 100vh;
     display: none;
     position: absolute;
     inset: 60px 20px 20px 20px;
@@ -537,6 +557,10 @@ section {
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+  }
+
+  .navmenu .sub-logo {
+    display: none;
   }
 }
 
@@ -880,6 +904,7 @@ section {
 ------------------------------*/
 .clients {
   padding: 10px 0;
+  margin-top: 80px;
 }
 
 .clients .client-logo {
@@ -893,14 +918,8 @@ section {
   padding: 40px;
   max-width: 80%;
   transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
 }
 
-.clients .client-logo img:hover {
-  filter: none;
-  opacity: 1;
-}
 
 @media (max-width: 640px) {
   .clients .client-logo img {
@@ -2375,4 +2394,160 @@ section {
 .blog-details .comments .reply-form .btn-primary:hover {
   color: var(--contrast-color);
   background-color: rgba(var(--primary-color-rgb), 0.8);
+}
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  top: 10%;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  right: 45px;
+  font-size: 60px;
+
+}
+
+.overlay .closebtn:hover {
+  color: #FFF;
+}
+
+.navbar-toggler {
+  color: #ffffff !important;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*---------------------------------------------- 
+ Inner Tab Content */
+
+.overlay-index .tab-content {
+  background-color: #00000000;
+}
+
+.overlay-index nav {
+  margin-top: 50px;
+}
+
+/* .overlay-index:hover {} */
+
+.overlay-index h1 {
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.overlay-index .nav.nav-pills {
+  position: inherit;
+  transition: transform 1s ease-in-out;
+}
+
+.overlay .nav-pills .nav-link {
+  color: #ffffff;
+  text-align: left;
+  font-size: 25px;
+}
+
+.overlay .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: #00000000;
+  color: #e02626;
+}
+
+.overlay .nav-pills .nav-link.active {
+  border-bottom: 1px solid #e02626;
+}
+
+.overlay .nav-pills .nav-link:hover {
+  margin-top: 5px;
+  color: #e02626;
+}
+
+.overlay-index .tab-content img {
+  max-width: 100%;
+  min-width: 100%;
+  width: 250px;
+  animation: mymove .5s linear;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  position: relative;
+  border-radius: 10px;
+}
+
+@keyframes mymove {
+  from {
+    top: 50px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+
+.img__wrap {
+  position: relative;
+  text-align: center;
+}
+
+.img__wrap .h3 {
+  bottom: 0;
+}
+
+.img__description {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: #ed323894;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
 }

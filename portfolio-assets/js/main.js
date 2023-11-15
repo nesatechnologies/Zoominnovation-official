@@ -1,10 +1,4 @@
-/**
-* Template Name: Append
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -42,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
-  const selectBody = document.querySelector('body');
-  const selectHeader = document.querySelector('#header');
+  // const selectBody = document.querySelector('body');
+  // const selectHeader = document.querySelector('#header');
 
   function toggleScrolled() {
     if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
@@ -57,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Scroll up sticky header to headers with .scroll-up-sticky class
    */
   let lastScrollTop = 0;
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function () {
     if (!selectHeader.classList.contains('scroll-up-sticky')) return;
 
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -103,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .has-dropdown i').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+    navmenu.addEventListener('click', function (e) {
       if (document.querySelector('.mobile-nav-active')) {
         e.preventDefault();
         this.parentNode.classList.toggle('active');
@@ -116,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  window.addEventListener('load', function (e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
         setTimeout(() => {
@@ -147,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Init isotope layout and filters
    */
   function initIsotopeLayout() {
-    document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+    document.querySelectorAll('.isotope-layout').forEach(function (isotopeItem) {
       let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
       let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
       let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
@@ -159,8 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
         sortBy: sort
       });
 
-      isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-        filters.addEventListener('click', function() {
+      isotopeItem.querySelectorAll('.isotope-filters li').forEach(function (filters) {
+        filters.addEventListener('click', function () {
           isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
           this.classList.add('filter-active');
           initIsotope.arrange({
@@ -189,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Init swiper sliders
    */
   function initSwiper() {
-    document.querySelectorAll('.swiper').forEach(function(swiper) {
+    document.querySelectorAll('.swiper').forEach(function (swiper) {
       let config = JSON.parse(swiper.querySelector('.swiper-config').innerHTML.trim());
       new Swiper(swiper, config);
     });
@@ -210,3 +204,4 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', aosInit);
 
 });
+

@@ -2,530 +2,595 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="assets/img/Favicon.png">
+  <link rel="icon" href="assets/img/Favicon.png">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
 
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Zoom Innovation</title>
+  <title>Zoom Innovation</title>
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+  <!-- Navigation Bar -->
 
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-          <a href="index.html"><img src="assets/img/logo-main.png" alt="" class="img-fluid"></a>
-    
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">&#9776;</span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-    
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Product & Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
-                  <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
-                  <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
-                  <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
-                  <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
-                  <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
-                  <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
-                  <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
-                  <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
-                  <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
-                </ul>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link" href="facility.html" tabindex="-1" aria-disabled="true">Facilities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio-index.html" tabindex="-1" aria-disabled="true">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">contact Us</a>
-              </li>
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0"><img src="assets/img/logo-main.png"
+          alt="" class="img-fluid"></a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li class="dropdown has-dropdown"><a href="product.html"><span>Product & Services</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a class="dropdown-item" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
+              <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
+              <li><a class="dropdown-item" href="service-3.html">Sun Control & Safety Film</a></li>
+              <li><a class="dropdown-item" href="service-4.html">LED Signages</a></li>
+              <li><a class="dropdown-item" href="service-5.html">Fire Safety Signages</a></li>
+              <li><a class="dropdown-item" href="service-6.html">wayfinding Signages</a></li>
+              <li><a class="dropdown-item" href="service-7.html">Printed & Mounted Canvas</a></li>
+              <li><a class="dropdown-item" href="service-8.html">3M™ Safety-Walk</a></li>
+              <li><a class="dropdown-item" href="service-9.html">3M™ Nomad™ Matting</a></li>
+              <li><a class="dropdown-item" href="service-10.html">Internal signages</a></li>
             </ul>
-    
-          </div>
-    
-          <img src="assets/img/3m-logo.png" alt="" class="img-fluid sub-logo">
-    
-          <span onclick="openNav()" class="side-bar">&#9776; </span>
-        </div>
+          </li>
+          <li><a href="facility.html">Facilities</a></li>
+          <li><a href="portfolio-index.html">portfolio</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+        <img src="assets/img/3m-logo.png" alt="" class="sub-logo">
+
+        <span onclick="openNav()" class="side-bar">&#9776; </span>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-    
-    
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <div class="container">
-            <div class="overlay-index">
-    
-              <h1>Products & Services</h1>
-              <hr class="bg-light border-4 border-top border-light">
-              <div class="d-flex align-items-start">
-    
-                <!-- Tab Content Button -->
-    
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    
-                  <button class="nav-link active" id="v-pills-one-tab" data-bs-toggle="pill" data-bs-target="#v-pills-one"
-                    type="button" role="tab" aria-controls="v-pills-one" aria-selected="true">Wall Graphics</button>
-    
-                  <button class="nav-link" id="v-pills-two-tab" data-bs-toggle="pill" data-bs-target="#v-pills-two"
-                    type="button" role="tab" aria-controls="v-pills-two" aria-selected="false">Frosted Films & Clear
-                    Graphics</button>
-    
-                  <button class="nav-link" id="v-pills-three-tab" data-bs-toggle="pill" data-bs-target="#v-pills-three"
-                    type="button" role="tab" aria-controls="v-pills-three" aria-selected="false">Sun Control & Saftey
-                    Films</button>
-    
-                  <button class="nav-link" id="v-pills-four-tab" data-bs-toggle="pill" data-bs-target="#v-pills-four"
-                    type="button" role="tab" aria-controls="v-pills-four" aria-selected="false">LED Signages & Non LED
-                    Signages</button>
-    
-                  <button class="nav-link" id="v-pills-five-tab" data-bs-toggle="pill" data-bs-target="#v-pills-five"
-                    type="button" role="tab" aria-controls="v-pills-five" aria-selected="false">Fire Safety
-                    Signages</button>
-    
-                  <button class="nav-link" id="v-pills-six-tab" data-bs-toggle="pill" data-bs-target="#v-pills-six"
-                    type="button" role="tab" aria-controls="v-pills-six" aria-selected="true">Wayfinding Signages</button>
-    
-                  <button class="nav-link" id="v-pills-seven-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seven"
-                    type="button" role="tab" aria-controls="v-pills-seven" aria-selected="false">Printed & Mounted
-                    Canvas</button>
-    
-                  <button class="nav-link" id="v-pills-eight-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eight"
-                    type="button" role="tab" aria-controls="v-pills-eight" aria-selected="false">3m Anti-Skid ape</button>
-    
-                  <button class="nav-link" id="v-pills-nine-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nine"
-                    type="button" role="tab" aria-controls="v-pills-nine" aria-selected="false">3m Entryway Matting Sysytem
-                    (EWS)</button>
-    
-                  <button class="nav-link" id="v-pills-ten-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ten"
-                    type="button" role="tab" aria-controls="v-pills-ten" aria-selected="false">Internal Signages</button>
-    
+
+    </div>
+  </header>
+
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <div class="container">
+        <div class="overlay-index">
+
+          <h1>Products & Services</h1>
+          <hr class="bg-light border-4 border-top border-light">
+          <div class="d-flex align-items-start">
+
+            <!-- Tab Content Button -->
+
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+              <button class="nav-link active" id="v-pills-one-tab" data-bs-toggle="pill" data-bs-target="#v-pills-one"
+                type="button" role="tab" aria-controls="v-pills-one" aria-selected="true">Wall Graphics</button>
+
+              <button class="nav-link" id="v-pills-two-tab" data-bs-toggle="pill" data-bs-target="#v-pills-two"
+                type="button" role="tab" aria-controls="v-pills-two" aria-selected="false">Frosted Films & Clear
+                Graphics</button>
+
+              <button class="nav-link" id="v-pills-three-tab" data-bs-toggle="pill" data-bs-target="#v-pills-three"
+                type="button" role="tab" aria-controls="v-pills-three" aria-selected="false">Sun Control & Saftey
+                Films</button>
+
+              <button class="nav-link" id="v-pills-four-tab" data-bs-toggle="pill" data-bs-target="#v-pills-four"
+                type="button" role="tab" aria-controls="v-pills-four" aria-selected="false">LED Signages & Non LED
+                Signages</button>
+
+              <button class="nav-link" id="v-pills-five-tab" data-bs-toggle="pill" data-bs-target="#v-pills-five"
+                type="button" role="tab" aria-controls="v-pills-five" aria-selected="false">Fire Safety
+                Signages</button>
+
+              <button class="nav-link" id="v-pills-six-tab" data-bs-toggle="pill" data-bs-target="#v-pills-six"
+                type="button" role="tab" aria-controls="v-pills-six" aria-selected="true">Wayfinding Signages</button>
+
+              <button class="nav-link" id="v-pills-seven-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seven"
+                type="button" role="tab" aria-controls="v-pills-seven" aria-selected="false">Printed & Mounted
+                Canvas</button>
+
+              <button class="nav-link" id="v-pills-eight-tab" data-bs-toggle="pill" data-bs-target="#v-pills-eight"
+                type="button" role="tab" aria-controls="v-pills-eight" aria-selected="false">3m Anti-Skid ape</button>
+
+              <button class="nav-link" id="v-pills-nine-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nine"
+                type="button" role="tab" aria-controls="v-pills-nine" aria-selected="false">3m Entryway Matting Sysytem
+                (EWS)</button>
+
+              <button class="nav-link" id="v-pills-ten-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ten"
+                type="button" role="tab" aria-controls="v-pills-ten" aria-selected="false">Internal Signages</button>
+
+            </div>
+
+            <!-- Tab Content Start -->
+
+            <div class="tab-content" id="v-pills-tabContent">
+
+              <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel" aria-labelledby="v-pills-one-tab">
+
+                <div class="row">
+
+                  <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-1-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-1-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4" data-aos="fade-right">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-1-3.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
                 </div>
-    
-                <!-- Tab Content Start -->
-    
-                <div class="tab-content" id="v-pills-tabContent">
-    
-                  <div class="tab-pane fade show active" id="v-pills-one" role="tabpanel" aria-labelledby="v-pills-one-tab">
-    
-                    <div class="row">
-    
-                      <div class="col-lg-4" data-aos="fade-right">
-                        <div class="img__wrap">
-                          <img src="assets/img/product/product-1-1.png" class="image-zoom-effect">
-                          <h3 class="img__description">This image looks super neat.</h3>
-                        </div>
-                      </div>
-    
-                      <div class="col-lg-4" data-aos="fade-right">
-                        <div class="img__wrap">
-                          <img src="assets/img/product/product-1-2.png" class="image-zoom-effect">
-                          <h3 class="img__description">This image looks super neat.</h3>
-                        </div>
-                      </div>
-                      <div class="col-lg-4" data-aos="fade-right">
-                        <div class="img__wrap">
-                          <img src="assets/img/product/product-1-3.png" class="image-zoom-effect">
-                          <h3 class="img__description">This image looks super neat.</h3>
-                        </div>
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-two" role="tabpanel" aria-labelledby="v-pills-two-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/content/product-2.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/content/product-3.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/content/product-4.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-three" role="tabpanel" aria-labelledby="v-pills-three-tab">.
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-2.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-3.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-four" role="tabpanel" aria-labelledby="v-pills-four-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-4.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-5.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-6.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-five" role="tabpanel" aria-labelledby="v-pills-five-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-5.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-5-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-5-2.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-six" role="tabpanel" aria-labelledby="v-pills-six-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-6-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-6-2.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-6-3.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-seven" role="tabpanel" aria-labelledby="v-pills-seven-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-7.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-11.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-11-1.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-eight" role="tabpanel" aria-labelledby="v-pills-eight-tab">.
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-8.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-8-1.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-nine" role="tabpanel" aria-labelledby="v-pills-nine-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9-1.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/product-9-2.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                  <div class="tab-pane fade" id="v-pills-ten" role="tabpanel" aria-labelledby="v-pills-ten-tab">
-    
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-8.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-9.png" class="image-zoom-effect">
-                      </div>
-                      <div class="col-lg-4">
-                        <img src="assets/img/product/service-10.png" class="image-zoom-effect">
-                      </div>
-                    </div>
-    
-                  </div>
-    
-                </div>
-    
-                <!-- Tab Content End -->
-    
+
               </div>
-    
+
+              <div class="tab-pane fade" id="v-pills-two" role="tabpanel" aria-labelledby="v-pills-two-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/content/product-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/content/product-3.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/content/product-4.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-three" role="tabpanel" aria-labelledby="v-pills-three-tab">.
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-3.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-four" role="tabpanel" aria-labelledby="v-pills-four-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-4.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-5.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-6.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-five" role="tabpanel" aria-labelledby="v-pills-five-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-5.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-5-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-5-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-six" role="tabpanel" aria-labelledby="v-pills-six-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-6-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-6-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-6-3.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-seven" role="tabpanel" aria-labelledby="v-pills-seven-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-7.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-11.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-11-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-eight" role="tabpanel" aria-labelledby="v-pills-eight-tab">.
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-8.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-9.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-8-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-nine" role="tabpanel" aria-labelledby="v-pills-nine-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-9.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-9-1.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/product-9-2.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-ten" role="tabpanel" aria-labelledby="v-pills-ten-tab">
+
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-8.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-9.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="img__wrap image-zoom-effect">
+                      <img src="assets/img/product/service-10.png" class="image-zoom-effect">
+                      <div class="img__description"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Tab Content End -->
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navigation Bar End -->
+
+  <!-- ==== Banner Image ==== -->
+
+  <div class="about-banner">
+    <img src="assets/img/slider/banner-2.png" alt="banner" class="w-100">
+    <div class="container">
+      <div class="about-banner-item ">
+        <h1>About Us</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==== Banner Image ==== -->
+
+  <!-- ==== About Content ==== -->
+
+  <section>
+    <div class="about-hero">
+      <div class="container">
+        <div class="row g-3 post-grid">
+          <div class="col-lg-6 col-md-12 col-sm-18 mb-5">
+            <h1>About</h1>
+            <p class="text-dark">Zoom Innovation is a graphics and signage company growing as one of the top performers in
+              this field in Kerala. We are equipped with the most modern facilities to deliver
+              high-quality work with zeal in graphics, signage and glass films. With excellent design,
+              unique combinations of materials and technology.</p>
+            <p class="text-dark"> Our services include the production and installation of various types of signage’s and
+              graphics. We have a variety of options from which you can choose the correct choice fitting
+              to your demand. We use Latest machineries and materials like, HP Latex, Eco Solvent,
+              Lamination, Laser Cutting, Router, Chanel Bending Machine, and Liquid Acrylic to ensure you
+              are getting the result you desire.</p>
+          </div>
+          <div class="col-lg-6 col-md-12  col-sm-18 mb-5">
+            <div class="hero-index">
+              <div class="hero-item" data-aos="fade-left" data-aos-duration="1000">
+                <img src="assets/img/content/hero-01.png" class="img-2" alt="...">
+                <img src="assets/img/content/hero-02.png" class="img-1" alt="...">
+              </div>
             </div>
           </div>
         </div>
-      </div>    
+      </div>
+    </div>
+  </section>
 
-    <!-- Navigation Bar End -->
+  <!-- ==== About Content End ==== -->
 
-    <!-- ==== Banner Image ==== -->
+  <!-- ==== About More ==== -->
 
-    <div class="about-banner">
-        <img src="assets/img/slider/banner-2.png" alt="banner" class="w-100">
-        <div class="container">
-            <div class="about-banner-item ">
-                <h1>About Us</h1>
-            </div>
+  <section class="about-hero-index">
+    <h1 class="text-center">Why Choose Us</h1>
+
+    <div class="about-hero-content-one mt-5">
+      <div class="container">
+        <div class="content">
+          <h1>Our Services</h1>
+          <p>A glimpse of the services that we provide is given below. You may look into our catalogue for
+            further information and details on our services.</p>
+          <i>Wall Graphics</i>
+          <i>Frosted Films & Clear Graphics</i>
+          <i>Sun Control & Safety Films</i>
+          <i>LED Signages & Non LED Signages</i>
+          <i>Fire Safety Signages</i>
+          <i>Wayfinding Signages</i>
+          <i>Printed & Mounted Canvas</i>
+          <i>3M Anti-Skid Tape</i>
+          <i>3M Entryway Matting System (EWS)</i>
+          <i>Internal Signages</i>
         </div>
+      </div>
     </div>
 
-    <!-- ==== Banner Image ==== -->
-
-    <!-- ==== About Content ==== -->
-
-    <section>
-        <div class="about-hero">
-            <div class="container">
-                <div class="row g-3 post-grid">
-                    <div class="col-lg-6 col-md-12 col-sm-18 mb-5">
-                        <h1>About</h1>
-                        <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in
-                            this field in Kerala. We are equipped with the most modern facilities to deliver
-                            high-quality work with zeal in graphics, signage and glass films. With excellent design,
-                            unique combinations of materials and technology.</p>
-                        <p> Our services include the production and installation of various types of signage’s and
-                            graphics. We have a variety of options from which you can choose the correct choice fitting
-                            to your demand. We use Latest machineries and materials like, HP Latex, Eco Solvent,
-                            Lamination, Laser Cutting, Router, Chanel Bending Machine, and Liquid Acrylic to ensure you
-                            are getting the result you desire.</p>
-                    </div>
-                    <div class="col-lg-6 col-md-12  col-sm-18 mb-5">
-                        <div class="hero-index">
-                            <div class="hero-item" data-aos="fade-left" data-aos-duration="1000">
-                                <img src="assets/img/content/hero-01.png" class="img-2" alt="...">
-                                <img src="assets/img/content/hero-02.png" class="img-1" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="about-hero-content-two">
+      <div class="container">
+        <div class="content">
+          <h1>Our Milestone</h1>
+          <p>Back in the year 2014, when we founded Zoom Innovation, we intended to realize several clients'
+            brand signage needs. By doing so, we were not just establishing another concept development
+            company in the city of Cochin. Instead, we wanted to bring those beautiful visions conceived in
+            our clients' minds into a reality. From the beginning to this point, everyone at Zoom Innovation
+            has worked hard to bring it to this excellence level.
+            The ultimate judge for every business is its respective market. And Zoom Innovation has been
+            able to satisfy our clients with our extreme dedication and high-quality performance up until
+            now. Through our employees' pure talent and hard work, we have reached this point as a
+            competitive branded signage company based in Cochin. Today, years after our founding, our
+            satisfied customers stand as our witnesses. That is why our list of clientele includes many
+            prominent and reputed business establishments like Infosys, Geojit BNP Paribas, Xerox, Vayalar
+            Resorts, GMA, and KPMG.</p>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- ==== About Content End ==== -->
-
-    <!-- ==== About More ==== -->
-
-    <section class="about-hero-index">
-        <h1 class="text-center">Why Choose Us</h1>
-
-        <div class="about-hero-content-one">
-            <div class="container">
-                <div class="content">
-                    <h1>Our Services</h1>
-                    <p>A glimpse of the services that we provide is given below. You may look into our catalogue for
-                        further information and details on our services.</p>
-                    <i>Wall Graphics</i>
-                    <i>Frosted Films & Clear Graphics</i>
-                    <i>Sun Control & Safety Films</i>
-                    <i>LED Signages & Non LED Signages</i>
-                    <i>Fire Safety Signages</i>
-                    <i>Wayfinding Signages</i>
-                    <i>Printed & Mounted Canvas</i>
-                    <i>3M Anti-Skid Tape</i>
-                    <i>3M Entryway Matting System (EWS)</i>
-                    <i>Internal Signages</i>
-                </div>
-            </div>
+    <div class="about-hero-content-three">
+      <div class="container">
+        <div class="content">
+          <h1>Major Industries We Serve</h1>
+          <p>Our services at Zoom Innovation would vary depending on the needs of our various types of
+            clients. We manufacture and install all the products to deliver a seamless experience. Therefore
+            our clients do not have to go elsewhere for these separate services. Another thing our clients
+            can trust us on is that we use high-grade materials for our work. We never compromise on quality
+            here at Zoom Innovation. We have authorized vendors who never negotiate on the quality.</p>
+          <i>Corporate Sector including: IT Companies, Banking, etc.</i>
+          <i>Hospitality & Health Care</i>
+          <i>Consumer Markets</i>
+          <i>Design & Construction</i>
+          <i>Electronics & Manufacturing</i>
+          <i>Energy & Safety</i>
+          <i>Government</i>
         </div>
+      </div>
+    </div>
 
-        <div class="about-hero-content-two">
-            <div class="container">
-                <div class="content">
-                    <h1>Our Milestone</h1>
-                    <p>Back in the year 2014, when we founded Zoom Innovation, we intended to realize several clients'
-                        brand signage needs. By doing so, we were not just establishing another concept development
-                        company in the city of Cochin. Instead, we wanted to bring those beautiful visions conceived in
-                        our clients' minds into a reality. From the beginning to this point, everyone at Zoom Innovation
-                        has worked hard to bring it to this excellence level.
-                        The ultimate judge for every business is its respective market. And Zoom Innovation has been
-                        able to satisfy our clients with our extreme dedication and high-quality performance up until
-                        now. Through our employees' pure talent and hard work, we have reached this point as a
-                        competitive branded signage company based in Cochin. Today, years after our founding, our
-                        satisfied customers stand as our witnesses. That is why our list of clientele includes many
-                        prominent and reputed business establishments like Infosys, Geojit BNP Paribas, Xerox, Vayalar
-                        Resorts, GMA, and KPMG.</p>
-                </div>
-            </div>
+  </section>
+
+  <!-- ==== About More End ==== -->
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo-white.png">
+          </a>
+          <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this
+            field in Kerala. We are equipped with the most modern facilities to deliver high-quality work
+            with zeal in graphics, signage and glass films. With excellent design, unique combinations of
+            materials and technology.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.facebook.com/zoominnovationcochin/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/zoominnovation007/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCGUBcSAxgxmKyyAJPd9Mf6w"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
 
-        <div class="about-hero-content-three">
-            <div class="container">
-                <div class="content">
-                    <h1>Major Industries We Serve</h1>
-                    <p>Our services at Zoom Innovation would vary depending on the needs of our various types of
-                        clients. We manufacture and install all the products to deliver a seamless experience. Therefore
-                        our clients do not have to go elsewhere for these separate services. Another thing our clients
-                        can trust us on is that we use high-grade materials for our work. We never compromise on quality
-                        here at Zoom Innovation. We have authorized vendors who never negotiate on the quality.</p>
-                    <i>Corporate Sector including: IT Companies, Banking, etc.</i>
-                    <i>Hospitality & Health Care</i>
-                    <i>Consumer Markets</i>
-                    <i>Design & Construction</i>
-                    <i>Electronics & Manufacturing</i>
-                    <i>Energy & Safety</i>
-                    <i>Government</i>
-                </div>
-            </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Quick Access</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Product & Services</a></li>
+            <li><a href="facility.html">Facilities</a></li>
+            <li><a href="portfolio-index.html">Portfolio</a></li>
+            <li><a href="contact.html">contact Us</a></li>
+          </ul>
         </div>
 
-    </section>
-
-    <!-- ==== About More End ==== -->
-
-
-
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-
-        <div class="container footer-top">
-            <div class="row gy-4">
-                <div class="col-lg-5 col-md-12 footer-about">
-                    <a href="index.html" class="logo d-flex align-items-center">
-                        <img src="assets/img/logo-white.png">
-                    </a>
-                    <p>Zoom Innovation is a graphics and signage company growing as one of the top performers in this
-                        field in Kerala. We are equipped with the most modern facilities to deliver high-quality work
-                        with zeal in graphics, signage and glass films. With excellent design, unique combinations of
-                        materials and technology.</p>
-                    <div class="social-links d-flex mt-4">
-                        <a href="https://www.facebook.com/zoominnovationcochin/"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/zoominnovation007/"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.youtube.com/channel/UCGUBcSAxgxmKyyAJPd9Mf6w"><i
-                                class="bi bi-youtube"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Quick Access</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="product.html">Product & Services</a></li>
-                        <li><a href="facility.html">Facilities</a></li>
-                        <li><a href="portfolio-index.html">Portfolio</a></li>
-                        <li><a href="contact.html">contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
-                        <li><a href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
-                        <li><a href="service-3.html">Sun Control & Safety Film</a></li>
-                        <li><a href="service-4.html">LED Signages</a></li>
-                        <li><a href="service-5.html">Fire Safety Signages</a></li>
-                        <li><a href="service-6.html">wayfinding Signages</a></li>
-                        <li><a href="service-7.html">Printed & Mounted Canvas</a></li>
-                        <li><a href="service-8.html">3M™ Safety-Walk</a></li>
-                        <li><a href="service-9.html">3M™ Nomad™ Matting</a></li>
-                        <li><a href="service-10.html">Internal signages</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                    <h4>Contact Us</h4>
-                    <p>41/1205, Kunjattu Road Padivattom, Edappally P O, Ernakulam, Kerala 682024</p>
-                    <p class="mt-4"><strong>Phone:</strong> <span>+91 9526 007 700</span></p>
-                    <p><strong>Email:</strong> <span>enquiry@zoominnovation.com</span></p>
-                </div>
-
-            </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
+            <li><a href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
+            <li><a href="service-3.html">Sun Control & Safety Film</a></li>
+            <li><a href="service-4.html">LED Signages</a></li>
+            <li><a href="service-5.html">Fire Safety Signages</a></li>
+            <li><a href="service-6.html">wayfinding Signages</a></li>
+            <li><a href="service-7.html">Printed & Mounted Canvas</a></li>
+            <li><a href="service-8.html">3M™ Safety-Walk</a></li>
+            <li><a href="service-9.html">3M™ Nomad™ Matting</a></li>
+            <li><a href="service-10.html">Internal signages</a></li>
+          </ul>
         </div>
 
-        <div class="container copyright text-center mt-4">
-            <p>&copy; <span>Copyright</span> <strong class="px-1">Zoom Innovation</strong> <span>All Rights
-                    Reserved</span></p>
-            <div class="credits">
-                Designed by <a href="https://www.nesatechnologies.com/">Nesa Technologies</a>
-            </div>
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>41/1205, Kunjattu Road Padivattom, Edappally P O, Ernakulam, Kerala 682024</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 9526 007 700</span></p>
+          <p><strong>Email:</strong> <span>enquiry@zoominnovation.com</span></p>
         </div>
 
-    </footer><!-- End Footer -->
+      </div>
+    </div>
 
-    <!--============= script =============-->
+    <div class="container copyright text-center mt-4">
+      <p>&copy; <span>Copyright</span> <strong class="px-1">Zoom Innovation</strong> <span>All Rights
+          Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://www.nesatechnologies.com/">Nesa Technologies</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <!--============= script =============-->
 
 
-    <!-- slick slider -->
+  <!-- slick slider -->
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-    <!-- slick slider -->
+  <!-- slick slider -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <script src="assets/js/script.js"></script>
-    <!--============= script End =============-->
+  <script src="assets/js/script.js"></script>
+  <!--============= script End =============-->
 
 
 </body>
