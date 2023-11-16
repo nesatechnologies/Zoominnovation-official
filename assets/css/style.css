@@ -1346,7 +1346,7 @@ Service Section ======= */
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 80vh;
   background-color: #000000;
   margin-top: 50px;
 }
@@ -1356,6 +1356,14 @@ Service Section ======= */
     height: 80vh;
   }
 }
+
+
+@media screen and (max-width: 2000px) {
+  .service-item {
+    height: 65vh;
+  }
+}
+
 
 .service-item .container {
   display: flex;
@@ -1385,7 +1393,14 @@ Service Section ======= */
   text-align: center;
   margin: 20px;
 }
-
+@media screen and (max-width: 956px) {
+  .responsive-slider .slick-prev {
+    display: none !important;
+  }
+  .responsive-slider .slick-next {
+    display: none !important;
+  }
+}
 .banner-btn .btn {
   color: #ffffff;
 }
@@ -1421,7 +1436,7 @@ Service Section ======= */
 
 @media (max-width: 1700px) {
   .nav.nav-pills {
-    top: 55%;
+    top: 65%;
   }
 }
 
