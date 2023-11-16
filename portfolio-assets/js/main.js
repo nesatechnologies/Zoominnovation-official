@@ -2,6 +2,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+
+
+
   /**
    * Scroll top button
    */

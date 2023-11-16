@@ -1094,7 +1094,7 @@
 
   <!-- Number Count -->
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="section4">
       <div class="counter-section">
         <span class="c-section4">1300</span>
@@ -1113,6 +1113,34 @@
         <h3>Happy Clients</h3>
       </div>
       <div class="tallDiv"></div>
+    </div>
+  </div> -->
+
+  <!--Number Count-->
+  <div class="container">
+    <div class="count" data-aos="fade-up">
+      <div class="row counters">
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto text-center" data-aos="fade-in" data-aos-delay="100">
+          <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1"
+            class="purecounter"></span>
+          <h5 class="text-white text-center">Years of Experience</h5>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto text-center" data-aos="fade-in" data-aos-delay="200">
+          <span data-purecounter-start="0" data-purecounter-end="52" data-purecounter-duration="1"
+            class="purecounter"></span>
+          <h5 class="text-white text-center">Clients</h5>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto text-center" data-aos="fade-in" data-aos-delay="300">
+          <span data-purecounter-start="0" data-purecounter-end="429" data-purecounter-duration="1"
+            class="purecounter"></span>
+          <h5 class="text-white text-center">Happy customers</h5>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto text-center" data-aos="fade-in" data-aos-delay="400">
+          <span data-purecounter-start="0" data-purecounter-end="2489" data-purecounter-duration="1"
+            class="purecounter"></span>
+          <h5 class="text-white text-center">Projects</h5>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1260,15 +1288,22 @@
 
   <!-- contact Section -->
 
-  <section id="contact">
-    <div class="contact">
-      <img src="assets/img/content/contact01.png" alt="Snow" style="width:100%;">
-      <div class="container">
-        <div class="contact-item">
-          <h1 class="text-white">Let's Get Your Project<br>Started!</h1>
+
+  <section id="call-to-action" class="call-to-action">
+
+    <img src="assets/img/content/contact01.png" alt="">
+
+    <div class="container">
+      <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-xl-10">
+          <div class="text-center">
+            <h3>Let's Get Your Project<br>Started!</h3>
+            <a class="cta-btn" href="contact.html">Contact Us</a>
+          </div>
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- contact Section End-->
@@ -1360,7 +1395,48 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-  <script>
+    <script>
+
+      function animate(obj, initVal, lastVal, duration) {
+        let startTime = null;
+  
+        //get the current timestamp and assign it to the currentTime variable
+        let currentTime = Date.now();
+  
+        //pass the current timestamp to the step function
+        const step = (currentTime) => {
+  
+          //if the start time is null, assign the current time to startTime
+          if (!startTime) {
+            startTime = currentTime;
+          }
+  
+          //calculate the value to be used in calculating the number to be displayed
+          const progress = Math.min((currentTime - startTime) / duration, 1);
+  
+          //calculate what to be displayed using the value gotten above
+          obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+  
+          //checking to make sure the counter does not exceed the last value (lastVal)
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          } else {
+            window.cancelAnimationFrame(window.requestAnimationFrame(step));
+          }
+        };
+        //start animating
+        window.requestAnimationFrame(step);
+      }
+      let text1 = document.getElementById('0101');
+      let text2 = document.getElementById('0102');
+      let text3 = document.getElementById('0103');
+      const load = () => {
+        animate(text1, 0, 511, 7000);
+        animate(text2, 0, 232, 7000);
+        animate(text3, 100, 25, 7000);
+      }
+    </script>
+  <!-- <script>
     $(function () {
       function isScrolledIntoView($elem) {
         var docViewTop = $(window).scrollTop();
@@ -1375,10 +1451,10 @@
         if (isScrolledIntoView($this) && !$this.data("isCounting") && current < $this.data('count')) {
           $this.html(++current);
           $this.data("isCounting", true);
-          setTimeout(function () {
+          requestAnimationFrame(function () {
             $this.data("isCounting", false);
             count($this);
-          }, 50);
+          });
         }
       }
 
@@ -1392,7 +1468,7 @@
         $(".c-section4").each(function () {
           count($(this));
         });
-      };
+      }
 
       $(window).scroll(function () {
         startCount();
@@ -1400,7 +1476,8 @@
 
       startCount();
     });
-  </script>
+  </script> -->
+
 
   <script>
     var tag = document.createElement('script');
@@ -1455,6 +1532,7 @@
 
   <script src="assets/vendors/aos/aos.js"></script>
   <script type="text/javascript" src="assets/js/plugins.js"></script>
+  <script src="assets/purecounter/purecounter.js"></script>
 
   <!--============= script End =============-->
 
