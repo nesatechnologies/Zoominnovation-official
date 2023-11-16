@@ -9,7 +9,6 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
-  font-family: var(--default-font);
 }
 
 a {
@@ -166,7 +165,7 @@ section {
   cursor: pointer;
 }
 
-@media (max-width: 984px) {
+@media (max-width: 1199px) {
   .header .navmenu .side-bar {
     display: none;
   }
@@ -741,7 +740,6 @@ section {
 }
 
 hr.border-light {
-  max-width: 100%;
   opacity: 0.9;
   animation: autowidth 3.5s 1;
 }
@@ -767,7 +765,7 @@ hr.border-light {
   height: 80vh;
 }
 
-.carousel-item .btn {
+.carousel-caption .btn {
   border-radius: 50px;
   background: #171717;
   width: 209px;
@@ -777,16 +775,16 @@ hr.border-light {
 }
 
 .carousel-caption {
+  position: absolute;
   top: 43%;
   transform: translate(0, -50%);
   bottom: auto;
   left: 15%;
-  right: 0;
-  width: 500px;
-  opacity: 0;
+  width: 50%;
   overflow: hidden;
   text-align: left;
   border-radius: 20px;
+  z-index: 999;
 }
 
 .carousel-caption {
@@ -795,7 +793,7 @@ hr.border-light {
 }
 
 
-.carousel-item.active .carousel-caption {
+.carousel-inner .carousel-caption {
   animation: widthSlide 3.5s 1;
   opacity: 1;
   z-index: 999;
@@ -816,7 +814,7 @@ hr.border-light {
 }
 
 .carousel-caption h5 {
-  font-size: 4em;
+  font-size: 3em;
   /* -webkit-text-stroke: 2px #E2FADB; */
   color: #FFF;
   font-style: normal;
@@ -830,7 +828,7 @@ hr.border-light {
 
 .carousel-caption h4 {
   color: #ED1C24;
-  font-size: 80px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -849,7 +847,7 @@ hr.border-light {
   opacity: 1;
 }
 
-.carousel-item.active .carousel-caption h5:after {
+.carousel-inner .carousel-caption h5:after {
   width: 10%;
   height: 4px;
   animation: titleCover 2.5s 1;
@@ -913,15 +911,23 @@ hr.border-light {
   white-space: nowrap;
 }
 
-
 @media screen and (max-width: 956px) {
+  .carousel {
+    margin-top: 60px;
+  }
+
+  .carousel-inner .carousel-caption {
+    margin: auto;
+    width: auto;
+  }
+
   .carousel-inner {
     height: 70vh;
   }
 
   .carousel-caption h5 {
-    font-size: 5em;
-    margin: auto;
+    font-size: 1em;
+    padding-left: 20px;
   }
 
   .carousel-caption h4 {
@@ -932,7 +938,16 @@ hr.border-light {
 }
 
 @media screen and (max-width: 1100px) {
-  .carousel-item.active .carousel-caption {
+
+  .carousel-caption h5 {
+    font-size: 2em;
+  }
+
+  .carousel-caption h4 {
+    font-size: 40px;
+  }
+
+  .carousel-caption {
     width: 70%;
   }
 
@@ -944,7 +959,7 @@ hr.border-light {
 
 
     100% {
-      width: 30%;
+      width: 70%;
       opacity: 1;
     }
   }
@@ -1032,7 +1047,7 @@ li.nav-item>a {
 
 @media screen and (max-width: 991px) {
   .carousel-caption h5 {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
 
   .carousel-caption p {
@@ -1044,7 +1059,7 @@ li.nav-item>a {
 
 @media screen and (max-width: 768px) {
   .carousel-caption h5 {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
 
   .carousel-caption p {
@@ -1157,7 +1172,7 @@ Hero Section======= */
   margin-top: -190px;
 }
 
-#hero p{
+#hero p {
   color: #000;
 }
 
@@ -1167,17 +1182,19 @@ Hero Section======= */
   display: flex;
 }
 
-@media (max-width: 986px) {
+/* @media (max-width: 986px) {
   #hero {
-    margin-top: -274px;
     display: flex;
     justify-content: center;
   }
+} */
+.responsive-hero-images {
+  display: none;
 }
 
 @media (max-width: 1400px) {
   .hero {
-    height: 50vh;
+    height: auto;
 
   }
 }
@@ -1222,7 +1239,6 @@ Hero Section======= */
 
 @media (max-width: 1400px) {
   .hero img {
-    max-width: 35%;
     height: auto;
   }
 }
@@ -1243,7 +1259,34 @@ Hero Section======= */
   text-align: justify;
 }
 
+@media (max-width: 988px) {
+  .hero-index {
+    display: none;
+  }
+
+  .responsive-hero-images {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1199px){
+  .hero-index {
+    display: none;
+  }
+
+  .responsive-hero-images {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 812px) {
+
+
   .hero-colum {
     display: none;
   }
@@ -1265,7 +1308,7 @@ Hero Section======= */
 
   .hero {
     margin: 0;
-    height: 100vh;
+    height: auto;
   }
 
 
@@ -1282,6 +1325,7 @@ Service Section ======= */
 #service {
   margin-bottom: 0;
 }
+
 #service p {
   color: #fff;
 }
@@ -1323,6 +1367,10 @@ Service Section ======= */
   display: none;
 }
 
+.responsive-item p {
+  color: #000 !important;
+}
+
 .responsive-index {
   border-radius: 20px;
   margin: 10px;
@@ -1343,7 +1391,7 @@ Service Section ======= */
 }
 
 .responsive-item {
-  padding: 30px;
+  padding: 10px;
 }
 
 @media screen and (max-width: 956px) {
@@ -1786,7 +1834,7 @@ Number count */
 .about-banner-item {
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  padding: 50px;
 }
 
 .about-banner-item h1 {
@@ -1837,9 +1885,9 @@ Number count */
   }
 
   .about-banner-item {
-    width: 358px;
+    width: auto;
     height: 76px;
-    bottom: 10%;
+    bottom: -20%;
   }
 
   .about-banner-item h1 {
@@ -1892,8 +1940,8 @@ Number count */
 
 .about-hero-index p {
   display: grid;
-  color: #ffffff;
-} 
+  color: #ffffff ;
+}
 
 .about-hero-index .content i {
   font-size: 18px;
@@ -1923,19 +1971,22 @@ Number count */
   }
 
   .about-hero-content-one {
-    height: 65vh;
+    height: auto;
+    padding: 20px;
     text-align: center;
     color: #fff;
   }
 
   .about-hero-content-two {
-    height: 80vh;
+    height: auto;
+    padding: 20px;
     text-align: center;
     color: #fff;
   }
 
   .about-hero-content-three {
-    height: 100vh;
+    height: auto;
+    padding: 20px;
     text-align: center;
     color: #fff;
   }
@@ -2215,7 +2266,7 @@ Number count */
 /*------------------------------------------------ 
 Contact Section */
 #contact {
-  margin: 0;
+  margin-top: 100px;
 }
 
 .contact {
@@ -2696,6 +2747,11 @@ form .btn {
   color: #10e750;
 }
 
+@media (max-width: 988px) {
+  .footer h4 {
+    text-align: left;
+  }
+}
 
 .hide {
   display: none;
