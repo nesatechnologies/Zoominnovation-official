@@ -1883,17 +1883,18 @@ Number count */
   align-items: center;
 }
 
-/* 
+
 .about-hero-index .content,
 p {
   width: 600px;
   display: grid;
   color: #ffffff;
-} */
+} 
 
 .about-hero-index .content i {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 
 /* .about-hero-content-two .content {
@@ -1908,26 +1909,31 @@ p {
 @media (max-width: 980px) {
   .about-hero .hero-index {
     display: none;
+
   }
 
   .about-hero-index .content {
     width: auto;
     margin-top: 50px;
+    color: #fff;
   }
 
   .about-hero-content-one {
     height: 65vh;
     text-align: center;
+    color: #fff;
   }
 
   .about-hero-content-two {
     height: 80vh;
     text-align: center;
+    color: #fff;
   }
 
   .about-hero-content-three {
     height: 100vh;
     text-align: center;
+    color: #fff;
   }
 }
 
