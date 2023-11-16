@@ -1157,6 +1157,9 @@ Hero Section======= */
   margin-top: -190px;
 }
 
+#hero p{
+  color: #000;
+}
 
 .hero {
   max-width: 100%;
@@ -1278,6 +1281,9 @@ Service Section ======= */
 /* .service {} */
 #service {
   margin-bottom: 0;
+}
+#service p {
+  color: #fff;
 }
 
 .service ul {
@@ -1884,9 +1890,7 @@ Number count */
 }
 
 
-.about-hero-index .content,
-p {
-  width: 600px;
+.about-hero-index p {
   display: grid;
   color: #ffffff;
 } 
