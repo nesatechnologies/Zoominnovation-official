@@ -1952,6 +1952,7 @@ Number count */
   height: 60vh;
   display: flex;
   align-items: center;
+  background-color: #000;
 }
 
 .about-hero-content-two {
@@ -1962,6 +1963,7 @@ Number count */
   height: 60vh;
   display: flex;
   align-items: center;
+  background-color: #000;
 }
 
 .about-hero-content-three {
@@ -1972,6 +1974,7 @@ Number count */
   height: 60vh;
   display: flex;
   align-items: center;
+  background-color: #000;
 }
 
 
