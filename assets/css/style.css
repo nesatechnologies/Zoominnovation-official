@@ -1271,7 +1271,8 @@ Hero Section======= */
     justify-content: center;
   }
 }
-@media (max-width: 1199px){
+
+@media (max-width: 1199px) {
   .hero-index {
     display: none;
   }
@@ -1324,6 +1325,7 @@ Service Section ======= */
 /* .service {} */
 #service {
   margin-bottom: 0;
+  height: auto;
 }
 
 #service p {
@@ -1342,11 +1344,21 @@ Service Section ======= */
   color: #ED1C24;
 }
 
+.service-item .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-service-item {
+  display: none;
+}
+
 .service-item {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 65vh;
   background-color: #000000;
   margin-top: 50px;
 }
@@ -1358,22 +1370,31 @@ Service Section ======= */
 }
 
 
-@media screen and (max-width: 2000px) {
+/* @media screen and (max-width: 2000px) {
   .service-item {
     height: 65vh;
   }
+}  */
+/* @media screen and (max-width: 1999px) {
+  .service-item {
+    height: 65%;
+  }
+}  */
+
+@media screen and (max-width: 956px) {
+  /* #service {
+    margin-top: 32rem;
+  } */
+
+  .service-item {
+    display: none;
+  }
+
+  .responsive-service-item {
+    display: block;
+  }
 }
 
-
-.service-item .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.responsive-service-item {
-  display: none;
-}
 
 .responsive-item p {
   color: #000 !important;
@@ -1393,14 +1414,17 @@ Service Section ======= */
   text-align: center;
   margin: 20px;
 }
+
 @media screen and (max-width: 956px) {
   .responsive-slider .slick-prev {
     display: none !important;
   }
+
   .responsive-slider .slick-next {
     display: none !important;
   }
 }
+
 .banner-btn .btn {
   color: #ffffff;
 }
@@ -1409,19 +1433,7 @@ Service Section ======= */
   padding: 10px;
 }
 
-@media screen and (max-width: 956px) {
-  /* #service {
-    margin-top: 32rem;
-  } */
 
-  .service-item {
-    display: none;
-  }
-
-  .responsive-service-item {
-    display: block;
-  }
-}
 
 .nav.nav-pills {
   position: absolute;
@@ -1436,7 +1448,7 @@ Service Section ======= */
 
 @media (max-width: 1700px) {
   .nav.nav-pills {
-    top: 65%;
+    top: auto;
   }
 }
 
@@ -1515,6 +1527,7 @@ Service Section ======= */
   width: 600px;
   text-align: left;
   transition: linear .3s;
+  z-index: 999;
 }
 
 @media (max-width: 1400px) {
@@ -1536,6 +1549,15 @@ Service Section ======= */
   .tab-item-index {
     left: 30%;
     top: 35%;
+    width: 600px;
+    height: 10vh;
+  }
+}
+
+@media (max-width: 1399px) {
+  .tab-item-index {
+    left: 30%;
+    top: 22%;
     width: 600px;
     height: 10vh;
   }
@@ -1955,7 +1977,7 @@ Number count */
 
 .about-hero-index p {
   display: grid;
-  color: #ffffff ;
+  color: #ffffff;
 }
 
 .about-hero-index .content i {
