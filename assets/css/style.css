@@ -1368,6 +1368,11 @@ Service Section ======= */
     height: 80vh;
   }
 }
+@media screen and (max-width: 1799px) {
+  .service-item {
+    height: 80vh;
+  }
+}
 
 
 /* @media screen and (max-width: 2000px) {
