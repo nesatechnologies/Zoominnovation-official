@@ -32,8 +32,8 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li class="dropdown has-dropdown active"><a href="product.html" class="active"><span>Product & Services</span> <i
-                class="bi bi-chevron-down"></i></a>
+          <li class="dropdown has-dropdown active"><a href="product.html" class="active"><span>Product & Services</span>
+              <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
               <li><a class="dropdown-item active" href="service-1.html">Wall Graphics/Vinyl Graphics</a></li>
               <li><a class="dropdown-item" href="service-2.html">Frosted/Dusted/Fasara/Clear Graphics</a></li>
@@ -383,6 +383,15 @@
 
   <!-- Navigation Bar End -->
 
+  <!-- Spinner Start -->
+
+  <div id="spinner"
+    class="show spinner position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border position-relative" style="width: 6rem; height: 6rem;" role="status"></div>
+    <img class="position-absolute top-50 start-50 translate-middle" src="assets/img/logo-gif.gif" alt="Icon">
+  </div>
+
+  <!-- Spinner End -->
 
   <!-- ==== Banner Image ==== -->
 
@@ -579,6 +588,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+
+    <script>
+      // Spinner
+      var spinner = function () {
+        setTimeout(function () {
+          if ($('#spinner').length > 0) {
+            $('#spinner').removeClass('show');
+          }
+        }, 1);
+      };
+  
+      $(document).ready(function () {
+        spinner();
+      });
+    </script>
 
   <script src="assets/js/script.js"></script>
   <!--============= script End =============-->
