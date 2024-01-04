@@ -97,6 +97,145 @@ section {
   padding-bottom: 30px;
 }
 
+/*--- Image Light Box
+-----------------------------------------------*/
+
+.lightboxpreview {
+  transition: all .3s linear;
+padding-top:60%;
+ cursor:pointer;
+ background-size:cover;
+}
+  
+.lightbox-content {
+max-height:75vh;
+ height:75vh;
+ width:100%;
+ max-width: 1000px;}
+
+.lightbox-close { 
+ cursor:pointer;
+   margin-left: auto;
+ position:absolute;
+ right:-30px;
+ top:-30px;
+ color:white;
+   font-size: 2rem;
+   font-weight: 700;
+   line-height: 1;}
+.modal_inner_image {
+   min-height: 400px;
+   z-index: 1000;}
+.modal-content {
+   width: 100%;}
+
+
+.modalscale {transform:scale(0);
+opacity:0;}
+
+
+
+.lightbox-container, .lightbox-btn, .lightbox-image-wrapper, .lightbox-enabled{transition:all .4s ease-in-out;}
+.lightbox_img_wrap {padding-top:65%;
+ position:relative;
+ overflow:hidden;
+}
+.lightbox-enabled:hover {
+ transform:scale(1.1)
+}
+.lightbox-enabled {width:100%;
+height:100%;
+ position:absolute;
+ top:0;
+object-fit:cover;
+cursor:pointer;}
+
+.lightbox-container {width:100vw;
+height:100vh;
+position:fixed;
+top:0;
+left:0;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+background-color:rgba(0,0,0,.6);
+z-index:9999;
+opacity:0;
+pointer-events:none;
+}
+
+.lightbox-container.active {
+ opacity:1;
+ pointer-events:all;
+}
+.lightbox-image-wrapper {
+ display:flex;
+ transform:scale(0);
+ align-items:center;
+ justify-content:center;
+ max-width:90vw;
+ max-height:90vh;
+ position:relative;
+}
+.lightbox-container.active .lightbox-image-wrapper {transform:scale(1);}
+.lightbox-btn, #close {
+ color:white;
+ z-index:9999999;
+cursor:pointer; 
+ position:absolute;
+
+ font-size:50px;
+}
+
+.lightbox-btn:focus {
+ outline:none;
+}
+
+.left {left:50px;}
+.right {right:50px;}
+#close {top:50px;
+right:50px;}
+
+.lightbox-image {
+ width:100%;
+ -webkit-box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.19); 
+box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.19);
+ max-height:95vh;
+ object-fit:cover;
+}
+
+@keyframes slideleft {
+ 33% {transform:translateX(-300px);
+ opacity:0;
+ }
+ 66% {transform:translateX(300px);
+ opacity:0;
+ }
+}
+
+
+.slideleft {
+  animation-name: slideleft;
+animation-duration: .5s; 
+animation-timing-function: ease; 
+}
+@keyframes slideright {
+ 33% {transform:translateX(300px);
+ opacity:0;}
+ 66% {transform:translateX(-300px);
+ opacity:0;}
+}
+
+
+.slideright{
+  animation-name: slideright;
+animation-duration: .5s; 
+animation-timing-function: ease; 
+}
+ 
+
+ 
+
 /*--- Image hover Effects
 -----------------------------------------------*/
 
@@ -787,10 +926,10 @@ hr.border-light {
   z-index: 999;
 }
 
-.carousel-caption {
+/* .carousel-caption {
   background: linear-gradient(90deg, rgba(66, 66, 66, 0.01) 0%, rgba(104, 104, 104, 0.02) 100%);
   backdrop-filter: blur(20px);
-}
+} */
 
 
 .carousel-inner .carousel-caption {
@@ -824,6 +963,7 @@ hr.border-light {
   position: relative;
   width: fit-content;
   padding-right: 10px;
+  margin-bottom: 0;
 }
 
 .carousel-caption h4 {
@@ -843,7 +983,7 @@ hr.border-light {
   width: 100%;
   height: 100%;
   background: #fff;
-  bottom: -20px;
+  bottom: 0;
   opacity: 1;
 }
 
@@ -1169,7 +1309,11 @@ li.nav-item>a {
 Hero Section======= */
 
 #hero {
-  margin-top: -190px;
+  position: absolute;
+  top: 710px;
+  height: 70vh;
+  left: 6%;
+  z-index: 999;
 }
 
 #hero p {
@@ -1326,6 +1470,12 @@ Service Section ======= */
 #service {
   margin-bottom: 0;
   height: auto;
+
+}
+
+
+.service {
+  margin-top: 20em;
 }
 
 #service p {
@@ -1368,6 +1518,7 @@ Service Section ======= */
     height: 80vh;
   }
 }
+
 @media screen and (max-width: 1799px) {
   .service-item {
     height: 80vh;
@@ -1910,15 +2061,19 @@ Number count */
   background-position: 0% 50%;
 }
 
-.about-banner-item {
+.about-banner img {
+  filter: grayscale(var(--value, 50%)); --value: 50%;
+}
+
+  .about-banner-item {
   position: absolute;
   bottom: 0;
   width: 788px;
   height: 257px;
   flex-shrink: 0;
   border-radius: 20px;
-  background: linear-gradient(90deg, rgba(66, 66, 66, 0.01) 0%, rgba(104, 104, 104, 0.02) 100%);
-  backdrop-filter: blur(20px);
+  /* background: linear-gradient(90deg, rgba(66, 66, 66, 0.01) 0%, rgba(104, 104, 104, 0.02) 100%);
+  backdrop-filter: blur(20px); */
 }
 
 @media (max-width: 980px) {
