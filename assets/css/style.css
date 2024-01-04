@@ -2115,6 +2115,7 @@ Number count */
   border-radius: 20px;
   /* background: linear-gradient(90deg, rgba(66, 66, 66, 0.01) 0%, rgba(104, 104, 104, 0.02) 100%);
   backdrop-filter: blur(20px); */
+  top: 20%;
 }
 
 @media (max-width: 980px) {
